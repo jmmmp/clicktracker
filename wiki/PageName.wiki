@@ -1,202 +1,236 @@
 =Click Tracker Tutorial=
 
-<a href="#bbtc">Notating beats / bars / tempo / comments</a><br />
-<a href="#tc">Gradual tempo changes</a><br />
-<a href="#rep">Repetitions</a><br />
-<a href="#pbar">Pickup bar</a><br />
-<a href="#first">Other first bar number</a></h3>
-<a href="#plback">Definition of playback parameters</a><br />
-<a href="#gui">GUI control</a><br />
-<a href="#cmd">Command list</a><br />
-<hr />
+ * Notating beats / bars / tempo / comments
+ * Gradual tempo changes
+ * Repetitions
+ * Pickup bar
+ * Other first bar number
+ * Definition of playback parameters
+GUI control
+ * Command list
 
-<h2>Click Tracker - Score format and program settings</h2>
-<h3>by João Pais</h3>
-<p>This is a tutorial on how to prepare a score for the Click Tracker patch. At the same time it should teach you on how to use the program.<br />
-The Click Tracker reads documents in text format (.txt). For that they should be saved as text-only format - in case you use Word or any other office software you should pay attention to this.<br />
-To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program - basically you must write down the metrical structure of the score.</p>
+==Click Tracker - Score format and program settings==
+===by João Pais===
 
-<h3><a name="bbtc">Notating beats / bars / tempo / comments</a></h3>
-<p>You start the score by writing the duration of each beat in one line - for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar - separated by a space.<br />
-For example here are the first two 4/4 bars of this score:<br />
+This is a tutorial on how to prepare a score for the Click Tracker patch. At the same time it should teach you on how to use the program.
 
-<p><strong><code>t 60<br />
+The Click Tracker reads documents in text format (.txt). For that they should be saved as text-only format - in case you use Word or any other office software you should pay attention to this.
 
-1 b<br />
-1<br />
-1<br />
-1<br />
-1 b<br />
-1<br />
-1<br />
-1</strong></code></p>
+To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program - basically you must write down the metrical structure of the score.
 
-These were two regular bars where each beat has the same duration. The bar symbol (b) only has to be used in the beginning of each bar. After that you only have to write the duration of the beats: the program will count both beats and bars automatically.<br />
-The tempo is MM60 as indicated by the command "t 60" (with space in between). You can use the t command anywhere in the piece and how many times you want - just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note:<br />
+===Notating beats / bars / tempo / comments===
 
-<p><strong><code>t 60<br />
-1 b<br />
-t 120<br />
-1<br />
-t 30<br />
-1<br />
-t 90<br />
-1</strong></code></p>
+You start the score by writing the duration of each beat in one line - for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar - separated by a space.
 
-In case you forget to say which tempo you want the program will assume that the piece is at MM60.<br />
-If your time signature is irregular you can change the duration of each beat - including decimal values. The next bar sounds just like the previous one but in the same tempo throughout:<br />
+For example here are the first two 4/4 bars of this score:
 
-<p><strong><code>t 60<br />
-1 b<br />
-.5<br />
-2<br />
-.666</strong></code></p>
+{{{
+t 60
+1 b
+1
+1
+1
+1 b
+1
+1
+1
+}}}
 
-Notice that all decimal values must be written with a dot instead of a comma.<br />
-There is another way to notate factional values - through the fraction that calculates the value. You can use any values on both sides of the fraction. Here follow some values notated in both ways:<br />
+These were two regular bars where each beat has the same duration. The bar symbol (b) only has to be used in the beginning of each bar. After that you only have to write the duration of the beats: the program will count both beats and bars automatically.
 
-<p><strong><code>0.5 b<br />
-1:2<br />
-0.666<br />
-2:3<br />
-0.928<br />
-6.5:7</strong></code></p>
+The tempo is MM60 as indicated by the command "t 60" (with space in between). You can use the t command anywhere in the piece and how many times you want - just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note:
+
+{{{
+t 60
+1 b
+t 120
+1
+t 30
+1
+t 90
+1
+}}}
+
+In case you forget to say which tempo you want the program will assume that the piece is at MM60.
+
+If your time signature is irregular you can change the duration of each beat - including decimal values. The next bar sounds just like the previous one but in the same tempo throughout:
+
+{{{
+t 60
+1 b
+.5
+2
+.666
+}}}
+
+Notice that all decimal values must be written with a dot instead of a comma.
+
+There is another way to notate factional values - through the fraction that calculates the value. You can use any values on both sides of the fraction. Here follow some values notated in both ways:
+
+{{{
+0.5 b
+1:2
+0.666
+2:3
+0.928
+6.5:7
+}}}
 
 And now something completely different: a completely irregular bar with some irrational values.
 
-<p><strong><code>1 b<br />
-.2<br />
-1.65465439458675<br />
-5.14</strong></code></p>
+{{{
+1 b
+.2
+1.65465439458675
+5.14
+}}}
 
-There are no limits for the decimal values you can use. Any value (as long as written correctly) can be played back.<br />
+There are no limits for the decimal values you can use. Any value (as long as written correctly) can be played back.
 
-As you might have noticed by now this file is at the same time the tutorial for the program and also a score that can be performed. The parts with the numbers are the "music" and comments can be made in any place in the file if you put the symbol before each comment. If you don't use the symbol with a space afterwards the file won't be properly read by the program.<br />
-Very important about the comments: you can't use any commas or semicolons - it would be misinterpreted by the program!<br />
-Also you don't have to layout all you music lines one after the other. They can have empty lines between them - as well as comments in the same line:<br />
+As you might have noticed by now this file is at the same time the tutorial for the program and also a score that can be performed. The parts with the numbers are the "music" and comments can be made in any place in the file if you put the symbol before each comment. If you don't use the symbol with a space afterwards the file won't be properly read by the program.
 
-<p><strong><code># Now we're at bar 7. The tempo is 60<br />
-1 b # Here is the beginning of the bar - the letter b is after the beat duration.<br />
-<br />
-# Here is an empty space. You can have as many as you want.<br />
-<br />
-<br />
-1 # And some more beats<br />
-<br />
-1<br />
-<br />
-1<br />
-1 # And here the end of the bar. It turned out to be a 5/4 bar.</strong></code></p>
+Very important about the comments: you can't use any commas or semicolons - it would be misinterpreted by the program!
 
-<p>The options that you saw until now allow you to notation quite complex durations to create irregular bars. But in case your piece is simpler than that you can notate it in another way: through the format x/y - like a normal bar. For example with only a couple lines we can create a simple bar sequence:<br />
+Also you don't have to layout all you music lines one after the other. They can have empty lines between them - as well as comments in the same line:
 
-<p><strong><code>4/4 # This goes from 4/4<br />
-3/4 # ...<br />
-2/4 # ...<br />
-1/4 # to 1/4</strong></code></p>
-
-But you can use any ratio you want to. Important is only that the top number is a whole number (no decimal numbers allowed). On the other hand the lower number can be decimal if you want to. For example:<br />
-
-<p><strong><code>4/6<br />
-5/8.5</strong></code></p>
-
-If you use this method the result will be the y proportion (4 = 1 beat) repeated x times. So if you write 5/8 you will get an 8th-note 5 times instead of the combination 3+2/8. Here is the difference:<br />
-
-<p><strong><code>5/8 # A bar with 5 8th-notes<br />
-<br />
-.5 b # The same written in another way<br />
-.5<br />
-.5<br />
-.5<br />
-.5<br />
-<br />
-1.5 b # And a bar with the same full duration but another division.<br />
-1</strong></code></p>
-
-Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.</p>
-
-<h3><a name="tc">Gradual tempo changes</a></h3>
-
-<p>To change the tempo suddenly we already saw the t command. But to create gradual tempo changes - accelerandi and ritardandi - use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts. If it doesn't the rest of the piece will sound a bit strange.<br />
-Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo:<br />
-
-<p><strong><code>1 b<br />
-1<br />
-1<br />
-1<br />
-<br />
-tc 120 4 # here is the tempo change command - always write them before the beat<br />
-1 b # the accelerando starts here<br />
-1<br />
-1<br />
-1<br />
-1 b # and now we're in the new tempo<br />
-1<br />
-1<br />
-1<br />
-<br />
-# And now it slows down to slower as the initial tempo:<br />
-tc 50 4<br />
-1 b # here starts to get slower<br />
-1<br />
-1<br />
-1<br />
-1 b # and now is at MM50<br />
-1<br />
-1<br />
-1</strong></code></p></p>
+{{{
+# Now we're at bar 7. The tempo is 60
+1 b # Here is the beginning of the bar - the letter b is after the beat duration.
+# Here is an empty space. You can have as many as you want.
 
 
-<h3><a name="rep">Repetitions</a></h3>
+1 # And some more beats
 
-<p>Repetitions of the same bar can be used a lot in modern music. Since the program counts the bars automatically it's different to write the repetitions down and to just repeat a sequence. Also a repetition isn't a new bar (with a different bar number) but the same bar again.<br />
-In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again - x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.<br />
-In case you use the "Go to bar" feature (more about that later) to start in the middle of a repetition sequence it won't work. For a repetition sequence to be correctly performed you must play the first note (since the command is before it).<br />
+1
 
-<p><strong><code># Here is a new irregular bar back at MM60<br />
-t 60<br />
-1 b<br />
-1<br />
-.5<br />
-# And now the same bar repeated 3 times:<br />
-rep 2.5 3<br />
-1 b<br />
-1<br />
-.5</strong></code></p>
+1
+1 # And here the end of the bar. It turned out to be a 5/4 bar.
+}}}
 
-You can also do the repetitions across the barlines. We stay in the same time signature but dislocate the repetition point:<br />
+The options that you saw until now allow you to notation quite complex durations to create irregular bars. But in case your piece is simpler than that you can notate it in another way: through the format x/y - like a normal bar. For example with only a couple lines we can create a simple bar sequence:
 
-<p><strong><code>1 b<br />
-1<br />
-rep 2.5 4<br />
-.5<br />
-1 b<br />
-1<br />
-.5<br />
-# And finally the full bar one last time.<br />
-1 b<br />
-1<br />
-.5</strong></code></p></p>
+{{{
+4/4 # This goes from 4/4
+3/4 # ...
+2/4 # ...
+1/4 # to 1/4
+}}}
+
+But you can use any ratio you want to. Important is only that the top number is a whole number (no decimal numbers allowed). On the other hand the lower number can be decimal if you want to. For example:
+
+{{{
+4/6
+5/8.5
+}}}
+
+If you use this method the result will be the y proportion (4 = 1 beat) repeated x times. So if you write 5/8 you will get an 8th-note 5 times instead of the combination 3+2/8. Here is the difference:
+
+{{{
+5/8 # A bar with 5 8th-notes
+
+.5 b # The same written in another way
+.5
+.5
+.5
+.5
+
+1.5 b # And a bar with the same full duration but another division.
+1
+}}}
+
+Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.
+
+===Gradual tempo changes===
+
+To change the tempo suddenly we already saw the t command. But to create gradual tempo changes - accelerandi and ritardandi - use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts. If it doesn't the rest of the piece will sound a bit strange.
+
+Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo:
+
+{{{
+1 b
+1
+1
+1
+
+tc 120 4 # here is the tempo change command - always write them before the beat
+1 b # the accelerando starts here
+1
+1
+1
+1 b # and now we're in the new tempo
+1
+1
+1
+
+# And now it slows down to slower as the initial tempo:
+tc 50 4
+1 b # here starts to get slower
+1
+1
+1
+1 b # and now is at MM50
+1
+1
+1
+}}}
+
+===Repetitions===
+
+Repetitions of the same bar can be used a lot in modern music. Since the program counts the bars automatically it's different to write the repetitions down and to just repeat a sequence. Also a repetition isn't a new bar (with a different bar number) but the same bar again.
+
+In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again - x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.
+
+In case you use the "Go to bar" feature (more about that later) to start in the middle of a repetition sequence it won't work. For a repetition sequence to be correctly performed you must play the first note (since the command is before it).
+
+{{{
+# Here is a new irregular bar back at MM60
+t 60
+1 b
+1
+.5
+# And now the same bar repeated 3 times:
+rep 2.5 3
+1 b
+1
+.5
+}}}
+
+You can also do the repetitions across the barlines. We stay in the same time signature but dislocate the repetition point:
+
+{{{
+1 b
+1
+rep 2.5 4
+.5
+1 b
+1
+.5
+# And finally the full bar one last time.
+1 b
+1
+.5
+}}}
 
 
-<h3><a name="pbar">Pickup bar</a></h3>
+===Pickup bar===
 
-<p>In a performance you can't start the click track without warning - with the "pickup x" comand it is possible to repeat the 1st bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.
-You can either include this command in the score file (anywhere in the score but I suggest you to leave it on top) - or change it anytime in the patch itself. To have 1 pickup bar write "pickup 1".<br />
-As pickup bars aren't exactly repetitions and you must know exactly when the piece is going to start the bar numbers in pickup bars work downwards until they get to 1 - which is point where the score begins. In case you have 1 pickup bar you'll and your chosen output has voice included you'll hear bar "2 [beats] 1". If you have 2 pickup bars then "3 [beats] 2 [beats] 1".</p>
+In a performance you can't start the click track without warning - with the "pickup x" comand it is possible to repeat the 1st bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.
+You can either include this command in the score file (anywhere in the score but I suggest you to leave it on top) - or change it anytime in the patch itself. To have 1 pickup bar write "pickup 1".
 
-
-<h3><a name="first">Other first bar number</a></h3>
-
-<p>With the comand "first x" you can define the numer of the first bar to be played - in case your click track doesn't begin at bar 1. If you want to rehearse with another first number for now you'll have to use the bar numbers as if they would start from 1.</p>
+As pickup bars aren't exactly repetitions and you must know exactly when the piece is going to start the bar numbers in pickup bars work downwards until they get to 1 - which is point where the score begins. In case you have 1 pickup bar you'll and your chosen output has voice included you'll hear bar "2 [beats] 1". If you have 2 pickup bars then "3 [beats] 2 [beats] 1".
 
 
-<h3><a name="plback">Definition of playback parameters</a></h3>
+===Other first bar number===
 
-<p>You can adjust the playback parameters (click format - language - recording format) anytime while working with the patch. But you can also adjust them in the score file. Then you don't need to always reset your patch when you load a new score (assuming each score has a different setting). To set a parameter you just write the command "par [parameters]" anywhere in the score. But like with the pickup command I advise you to put these general remarks in the beginning. Note: if you write down more than one command for the same parameter then the last command is the one to be valid.</p>
+With the comand "first x" you can define the numer of the first bar to be played - in case your click track doesn't begin at bar 1. If you want to rehearse with another first number for now you'll have to use the bar numbers as if they would start from 1.
 
-<p>The available parameters are:<br />
-click format - click / voice + click / voice / voice + bar  =  <strong><code>cl clst st stbb</strong></code><br />
+
+===Definition of playback parameters===
+
+You can adjust the playback parameters (click format - language - recording format) anytime while working with the patch. But you can also adjust them in the score file. Then you don't need to always reset your patch when you load a new score (assuming each score has a different setting). To set a parameter you just write the command "par [parameters]" anywhere in the score. But like with the pickup command I advise you to put these general remarks in the beginning. Note: if you write down more than one command for the same parameter then the last command is the one to be valid.
+
+The available parameters are:
+click format - click / voice + click / voice / voice + bar  =  {{{ cl clst st stbb }}}
 language - english / german / spanish /portuguese  =  <strong><code>english deutsch castellano portugues</strong></code><br />
 recording format - wav / mp3 / ogg  =  <strong><code>wav mp3 ogg</strong></code></p>
 
