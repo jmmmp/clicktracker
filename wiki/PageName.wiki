@@ -231,77 +231,98 @@ You can adjust the playback parameters (click format - language - recording form
 
 The available parameters are:
 click format - click / voice + click / voice / voice + bar  =  {{{ cl clst st stbb }}}
-language - english / german / spanish /portuguese  =  <strong><code>english deutsch castellano portugues</strong></code><br />
-recording format - wav / mp3 / ogg  =  <strong><code>wav mp3 ogg</strong></code></p>
 
-<p>For example to have a click track performed with clicks and recorded in mp3 you write
+language - english / german / spanish /portuguese  =  {{{ english deutsch castellano portugues}}}
 
-<p><strong><code>par cl mp3</strong></code></p>
+recording format - wav / mp3 / ogg  =  {{{wav mp3 ogg}}}
+
+For example to have a click track performed with clicks and recorded in mp3 you write
+
+{{{ par cl mp3 }}}
 
 To have a score performed with voice in portuguese and recorded in wav format you write
 
-<p><strong><code>par st portugues wav</strong></code></p>
+{{{ par st portugues wav }}}
 
 The standard format is voice + click / english / wav. Since there were some other commands before let's set it back to the standard preset.
 
-<p><strong><code>par clst english wav</strong></code></p></p>
+{{{ par clst english wav }}}
 
 
-<h3><a name="gui">GUI control</a></h3>
+===GUI control===
 
-<p>The explanation of the score format is finished. The next part handles the GUI and how to work with the program.
+The explanation of the score format is finished. The next part handles the GUI and how to work with the program.
 
-<p><strong>File commands (keyboard shortcuts between []): </strong><br />
- Open score [o] / reload score [l]- open a score file or reload one (in case you're working a lot on the same file)<br />
- Play / Stop [space] - self-explanatory<br />
- Set output file [f] - Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination (.wav ...) will be added by the program.<br />
- Play + record [s] - Play the score and record it at the same time. The file is also the recording of the performance so you must let the score play the whole piece (or stop it).</p>
+*File commands (keyboard shortcuts between []):*
 
-<p>Duration - Indicates the duration (minutes + seconds) of the excerpt you just played.<br />
-Bars (total) - Says how many bars are in the score</p>
+ Open score [o] / reload score [l]- open a score file or reload one (in case you're working a lot on the same file)
 
-<p><strong>Playback parameters - these were already mentioned</strong><br />
- Audio - settings of the audio format<br />
- Language - language setting<br />
- Format - recording format</p>
+ Play / Stop [space] - self-explanatory
 
-<p>Audio status - either On (preset) or off<br />
-Instructions - Click on this for a short reference<br />
-Keyboard Control - It is possible to control the patch using the keyboard shortcuts (these were just indicated). You can turn this on/off with the Escape key. If the box is crossed keyboard control is on.</p>
+ Set output file [f] - Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination (.wav ...) will be added by the program.
 
-<p>Tempo scaler - if a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown.<br />
-Voume meter + volume level - self explanatory</p>
+ Play + record [s] - Play the score and record it at the same time. The file is also the recording of the performance so you must let the score play the whole piece (or stop it).
 
-<p>Bar / Beat / Duration / Repetition - Bar + Beat count / Duration of current beat / Repetition indication</p>
+Duration - Indicates the duration (minutes + seconds) of the excerpt you just played.
 
-<p>Go to bar - Start directly from a bar<br />
-Pickup bar - How many pickup bars you want to have?<br />
-1st beat - Mute other beats besides the 1st one in each bar.</p>
+Bars (total) - Says how many bars are in the score
 
-<br />
-<br />
-<p>That's all there is to it. For more informations/requests contact me at jmmmpais@googlemail.com. If you have a request for a program or need to develop anything else we can discuss it.<br />
-<br />
-(c) João Pais 11.07.2010</p>
-<br />
+*Playback parameters - these were already mentioned*
 
-<h3><a name="cmd">Command list</a></h3>
+ Audio - settings of the audio format
+ Language - language setting
+ Format - recording format
 
-<p><code>t $1 - Tempo in MM - Eg. t 70<br />
-[beat duration] b - b marks the beginning of a bar<br />
-$1:$2 - fractional notation for the duration of beats - Eg. 2:3<br />
-$1/$2 - abreviated input of regular bars - Eg. 3/4<br />
-tc $1 $2 - tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) - Eg. tc 120 5<br />
-rep $1 $2 - repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat - Eg. rep 4 3<br />
-pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) - Eg. pickup 2<br />
-first $1 - number of the first bar of the score - Eg. first 35<br />
-par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters</p>
+Instructions - Click on this for a short reference
+Keyboard Control - It is possible to control the patch using the keyboard shortcuts (these were just indicated). You can turn this on/off with the Escape key. If the box is crossed keyboard control is on.
 
-<p>Keyboard shortcuts</p>
+Tempo scaler - if a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown.
 
-<p>o - open score<br />
-l - reload score<br />
-space - play/stop<br />
-f - set output file<br />
-s - play + record<br />
-Esc - turn keyboard control on/off</p>
+Voume meter + volume level - self explanatory
+
+Bar / Beat / Duration / Repetition - Bar + Beat count / Duration of current beat / Repetition indication
+
+Go to bar - Start directly from a bar
+
+Pickup bar - How many pickup bars you want to have?
+
+1st beat - Mute other beats besides the 1st one in each bar.
+
+That's all there is to it. For more informations/requests contact me at jmmmpais@googlemail.com. If you have a request for a program or need to develop anything else we can discuss it.
+
+(c) João Pais 11.07.2010
+
+===Command list===
+
+{{{ 
+t $1 - Tempo in MM - Eg. t 70
+
+[beat duration] b - b marks the beginning of a bar
+
+$1:$2 - fractional notation for the duration of beats - Eg. 2:3
+
+$1/$2 - abreviated input of regular bars - Eg. 3/4
+
+tc $1 $2 - tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) - Eg. tc 120 5
+
+rep $1 $2 - repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat - Eg. rep 4 3
+
+pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) - Eg. pickup 2
+
+first $1 - number of the first bar of the score - Eg. first 35
+
+par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters
+
+*Keyboard shortcuts*
+
+o - open score
+
+l - reload score
+
+space - play/stop
+
+f - set output file
+
+s - play + record
+
+Esc - turn keyboard control on/off
