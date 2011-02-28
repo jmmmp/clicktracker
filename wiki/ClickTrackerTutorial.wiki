@@ -1,13 +1,13 @@
 =Click Tracker Tutorial=
 
  * [ClickTrackerTutorial#Notating_beats_/_bars_/_tempo_/_comments Notating beats / bars / tempo / comments]
- * Gradual tempo changes
- * Repetitions
- * Pickup bar
- * Other first bar number
- * Definition of playback parameters
- * GUI control
- * Command list
+ * [ClickTrackerTutorial#Gradual_tempo_changes Gradual tempo changes]
+ * [ClickTrackerTutorial#Repetitions Repetitions]
+ * [ClickTrackerTutorial#Pickup_bar Pickup bar]
+ * [ClickTrackerTutorial#Other_first_bar_number Other first bar number]
+ * [ClickTrackerTutorial#Definition_of_playback_parameters Definition of playback parameters]
+ * [ClickTrackerTutorial#GUI_control GUI control]
+ * [ClickTrackerTutorial#Command_list Command list]
 
 ==Click Tracker - Score format and program settings==
 ===by João Pais===
