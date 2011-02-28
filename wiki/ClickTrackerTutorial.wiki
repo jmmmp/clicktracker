@@ -253,15 +253,15 @@ The standard format is voice + click / english / wav. Since there were some othe
 
 The explanation of the score format is finished. The next part handles the GUI and how to work with the program.
 
-*File commands (keyboard shortcuts between []):*
+*File commands (keyboard shortcuts between parenthesis):*
 
- Open score [o] / reload score [l]- open a score file or reload one (in case you're working a lot on the same file)
+Open score (o) / reload score (l)- open a score file or reload one (in case you're working a lot on the same file)
 
- Play / Stop [space] - self-explanatory
+Play / Stop (space) - self-explanatory
 
- Set output file [f] - Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination (.wav ...) will be added by the program.
+Set output file (f) - Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination (.wav ...) will be added by the program.
 
- Play + record [s] - Play the score and record it at the same time. The file is also the recording of the performance so you must let the score play the whole piece (or stop it).
+Play + record (s) - Play the score and record it at the same time. The file is also the recording of the performance so you must let the score play the whole piece (or stop it).
 
 Duration - Indicates the duration (minutes + seconds) of the excerpt you just played.
 
@@ -269,9 +269,9 @@ Bars (total) - Says how many bars are in the score
 
 *Playback parameters - these were already mentioned*
 
- Audio - settings of the audio format
- Language - language setting
- Format - recording format
+Audio - settings of the audio format
+Language - language setting
+Format - recording format
 
 Instructions - Click on this for a short reference
 Keyboard Control - It is possible to control the patch using the keyboard shortcuts (these were just indicated). You can turn this on/off with the Escape key. If the box is crossed keyboard control is on.
@@ -312,6 +312,7 @@ pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $
 first $1 - number of the first bar of the score - Eg. first 35
 
 par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters
+}}}
 
 *Keyboard shortcuts*
 
