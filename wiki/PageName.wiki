@@ -6,7 +6,7 @@
  * Pickup bar
  * Other first bar number
  * Definition of playback parameters
-GUI control
+ * GUI control
  * Command list
 
 ==Click Tracker - Score format and program settings==
@@ -290,7 +290,7 @@ Pickup bar - How many pickup bars you want to have?
 
 That's all there is to it. For more informations/requests contact me at jmmmpais@googlemail.com. If you have a request for a program or need to develop anything else we can discuss it.
 
-(c) João Pais 11.07.2010
+====(c) João Pais 11.07.2010====
 
 ===Command list===
 
