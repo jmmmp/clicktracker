@@ -81,7 +81,7 @@ To program a specific feature [mailto:jmmmpais@googlemail.com?&body=Hi%20João,%
 <tr> <td>MacOS</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Palmtop</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>iPhone</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>WindowsMobile</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Windows Mobile</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Android</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Online server</td> <td></td> <td align="center">X</td> </tr>
 </table>
