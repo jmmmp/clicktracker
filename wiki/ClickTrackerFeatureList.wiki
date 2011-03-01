@@ -2,8 +2,13 @@
 #labels Featured,Phase-Implementation
 
 =Click Tracker Feature List – 16.01.2011=
+This is the current list of programmed and planned features.
 
-<table border="2" cellpadding="3">
+You can support financially the implementation of any of these features, or comission specific features or enhancements directly from the author (for example, with [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=912854 Paypal]. 
+
+Please [mailto:jmmmpais@googlemail.com?&body=Hi,%0A%0a contact me] with your ideas, and I'll give you a quote.
+
+<table border="1" cellpadding="3">
 <tr> <th>Feature</th> <th>Programmed</th> <th>To program</th> </tr>
 
 <tr> <td colspan="3"><b>File input / Score format</b></td> </tr>
