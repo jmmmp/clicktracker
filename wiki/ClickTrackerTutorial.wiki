@@ -9,6 +9,7 @@
  * [ClickTrackerTutorial#Definition_of_playback_parameters Definition of playback parameters]
  * [ClickTrackerTutorial#GUI_control GUI control]
  * [ClickTrackerTutorial#Command_list Command list]
+ * [ClickTrackerTutorial#Keyboard_shortcuts Keyboard shortcuts]
 
 ==Click Tracker - Score format and program settings==
 ===by João Pais===
@@ -315,7 +316,7 @@ first $1 - number of the first bar of the score - Eg. first 35
 par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters
 }}}
 
-*Keyboard shortcuts*
+===Keyboard shortcuts===
 
 o - open score
 
