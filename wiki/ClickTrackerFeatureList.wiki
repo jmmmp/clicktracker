@@ -1,6 +1,6 @@
 #summary Click Tracker Feature List
 
-=Click Tracker Feature List – João Pais, 16.1.2011=
+=Click Tracker Feature List – 16.01.2011=
 
 <table border="2" cellpadding="3">
 <tr> <th>Feature</th> <th>Programmed</th> <th>To program</th> </tr>
@@ -27,53 +27,55 @@
 <tr> <td>Duration indicator</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Tempo scaler + Display</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Scaler Grenze</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Tutorial + Instructions</td> <td align="center">XX</td> <td></td> </tr>
-</table>
+<tr> <td>Tutorial + Instructions</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Score patch presets</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Session save</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Pause / Continue</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Keyboard playback control</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Midi playback control</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>OSC playback control</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Bluetooth playback control</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Graphical display & editing of the score</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Chaining of x patches</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Go to bar X</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Play from bar X to Y (with loop)</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Pickup bars</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Repeat bar X times</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Java (processing) GUI</td> <td></td> <td align="center">X</td> </tr>
 
-Score patch presets	x	
-Session save		x
-Pause / Continue		x
-Keyboard playback control	x	
-Midi playback control		x
-OSC playback control		x
-Bluetooth playback control		x
-Graphical display & editing of the score		x
-Chaining of x patches		x
-Go to bar X	x	
-Play from bar X to Y (with loop)		x
-Pickup bars	x	
-Repeat bar X times	x	
-Java (processing) GUI		x
-Sound / event output		
-Clicks only	x	
-Bar number + clicks	x	
-Bar number + beat number	x	
-Beat number only	x	
-Supress beats after 1st one	x	
-Playback with volume control	x	
-Automatic file selection	x	
-Midi event output		x
-OSC event output		x
-Wav bounce	x	
-Mp3 bounce	x	
-Ogg bounce	x	
-Midi bounce		x
-MusicXML bounce		x
-Track languages		
-English	x	
-German	x	
-French		x
-Spanish	x	
-Portuguese	x	
-Dutch		x
-Norwegian		x
-Other		x
-Porting		
-Windows	x	
-Unix	x	
-MacOS	x	
-Palmtop	x	
-iPhone		x
-WindowsMobile		x
-Android		x
-Online server		x
+<tr> <td colspan="3"><b>Sound / event output</b></td> </tr>
+<tr> <td>Clicks only</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Bar number + clicks</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Bar number + beat number</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Beat number only</td>  <td align="center">X</td> <td></td></tr>
+<tr> <td>Supress beats after 1st one</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Playback with volume control</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Automatic file selection</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Midi event output</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>OSC event output</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Wav bounce</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Mp3 bounce</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Ogg bounce</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Midi bounce</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>MusicXML bounce</td> <td></td> <td align="center">X</td> </tr>
+
+<tr> <td>Track languages</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>English</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>German</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>French</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Spanish</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Portuguese</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Dutch</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Norwegian</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Other</td> <td></td> <td align="center">X</td> </tr>
+
+<tr> <td>Porting</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Windows</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Unix</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>MacOS</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Palmtop</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>iPhone</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>WindowsMobile</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Android</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Online server</td> <td></td> <td align="center">X</td> </tr>
+</table>
