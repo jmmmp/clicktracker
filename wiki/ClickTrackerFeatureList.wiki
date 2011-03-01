@@ -1,0 +1,79 @@
+#summary Click Tracker Feature List
+
+=Click Tracker Feature List – João Pais, 16.1.2011=
+
+<table border="2" cellpadding="3">
+<tr> <th>Feature</th> <th>Programmed</th> <th>To program</th> </tr>
+
+<tr> <td colspan="3"><b>File input / Score format</b></td> </tr>
+
+<tr> <td>Midi import (through midi-to-text conversion)</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Sudden tempo change</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Gradual tempo change (accel. / rit.)</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Curve definition for gradual tempo changes</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Fracional notation for beats - 1:3, 2:5, ...</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Symbolic notation for bars - 2/4, 3/4, 4/4, ...</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Volume control</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Metrical subdivisions ("and")</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Ad hoc number statement (e.g. section anouncement)</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Subvoices for subdivisions</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Other commands that will be user-definable</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Automatic file update</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Program learns score from outside source</td> <td></td> <td align="center">X</td> </tr>
+
+<tr> <td colspan="3"><b>Usability</b></td> </tr>
+<tr> <td>On / Off display</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Bar / Beat / Duration display</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Duration indicator</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Tempo scaler + Display</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Scaler Grenze</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Tutorial + Instructions</td> <td align="center">XX</td> <td></td> </tr>
+</table>
+
+Score patch presets	x	
+Session save		x
+Pause / Continue		x
+Keyboard playback control	x	
+Midi playback control		x
+OSC playback control		x
+Bluetooth playback control		x
+Graphical display & editing of the score		x
+Chaining of x patches		x
+Go to bar X	x	
+Play from bar X to Y (with loop)		x
+Pickup bars	x	
+Repeat bar X times	x	
+Java (processing) GUI		x
+Sound / event output		
+Clicks only	x	
+Bar number + clicks	x	
+Bar number + beat number	x	
+Beat number only	x	
+Supress beats after 1st one	x	
+Playback with volume control	x	
+Automatic file selection	x	
+Midi event output		x
+OSC event output		x
+Wav bounce	x	
+Mp3 bounce	x	
+Ogg bounce	x	
+Midi bounce		x
+MusicXML bounce		x
+Track languages		
+English	x	
+German	x	
+French		x
+Spanish	x	
+Portuguese	x	
+Dutch		x
+Norwegian		x
+Other		x
+Porting		
+Windows	x	
+Unix	x	
+MacOS	x	
+Palmtop	x	
+iPhone		x
+WindowsMobile		x
+Android		x
+Online server		x
