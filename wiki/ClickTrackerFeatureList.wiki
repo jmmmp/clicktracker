@@ -1,4 +1,5 @@
 #summary Click Tracker Feature List
+#labels Featured,Phase-Implementation
 
 =Click Tracker Feature List – 16.01.2011=
 
@@ -47,33 +48,33 @@
 <tr> <td>Clicks only</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Bar number + clicks</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Bar number + beat number</td> <td align="center">X</td> <td></td> </tr>
-<tr> <td>Beat number only</td>  <td align="center">X</td> <td></td></tr>
-<tr> <td>Supress beats after 1st one</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Playback with volume control</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Automatic file selection</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Beat number only</td> <td align="center">X</td> <td></td></tr>
+<tr> <td>Supress beats after 1st one</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Playback with volume control</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Automatic file selection</td> <td align="center">X</td> </tr>
 <tr> <td>Midi event output</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>OSC event output</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Wav bounce</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Mp3 bounce</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Ogg bounce</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Wav bounce</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Mp3 bounce</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Ogg bounce</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Midi bounce</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>MusicXML bounce</td> <td></td> <td align="center">X</td> </tr>
 
-<tr> <td>Track languages</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>English</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>German</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td colspan="3"><b>Track languages</b></td> </tr>
+<tr> <td>English</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>German</td> <td align="center">X</td> </tr>
 <tr> <td>French</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Spanish</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Portuguese</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td>Spanish</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Portuguese</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Dutch</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Norwegian</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Other</td> <td></td> <td align="center">X</td> </tr>
 
-<tr> <td>Porting</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Windows</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Unix</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>MacOS</td> <td></td> <td align="center">X</td> </tr>
-<tr> <td>Palmtop</td> <td></td> <td align="center">X</td> </tr>
+<tr> <td colspan="3"><b>Porting</b></td> </tr>
+<tr> <td>Windows</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Unix</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>MacOS</td> <td align="center">X</td> <td></td> </tr>
+<tr> <td>Palmtop</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>iPhone</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>WindowsMobile</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Android</td> <td></td> <td align="center">X</td> </tr>
