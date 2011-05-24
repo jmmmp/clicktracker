@@ -1,5 +1,5 @@
 =Download=
-You can download the latest version *[http://code.google.com/p/clicktracker/downloads/list HERE]*.
+*[http://code.google.com/p/clicktracker/downloads/detail?name=click-tracker-1.15.zip CLICK HERE]* to download the latest version.
 
 *Windows users:* If Pd complains about mp3 and/or ogg support, download [http://puredata.info/Members/jmmmp/ogg-mp3libs.zip/at_download/file this] file and copy the files inside to your C:/Windows/System32 folder.
 
