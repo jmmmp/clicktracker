@@ -1,42 +1,35 @@
-#summary One-sentence summary of this page.
+=Download=
+You can download the latest version *[http://code.google.com/p/clicktracker/downloads/list HERE]*.
 
-= Introduction =
+*Windows users:* If Pd complains about mp3 and/or ogg support, download [http://puredata.info/Members/jmmmp/ogg-mp3libs.zip/at_download/file this] file and copy the files inside to your C:/Windows/System32 folder.
 
-Add your content here.
-
-
-= Details =
-
-Download
-
-You can download the latest version HERE. 
-
-Windows users: If Pd complains about mp3 and/or ogg support, download this file and copy the files inside to your C:/Windows/System32 folder. 
-
-If you want to be informed of new versions, please send me your contact. 
-How to install and run the Click Tracker patch
-1 - Install Pure Data Extended
-
-The software runs with Pure Data-Extended (Pd for short), which you must install first. Pure Data is a free software for live electronics. Installing it on your computer should be an easy process, just do the following: 
-go to the downloads section on the Pd website (left corner) 
-download the release of Pd-Extended that fits your system ("pd-extended" section) 
-install the program and start it, the window “Pd-extended” will appear 
-go to the menu Media -> "Test Audio and MIDI" 
-in the new window, on the left side under "TEST TONES", try clicking on the values “80” or “60” (volume values in decibels). You should hear a sine tone at 440 Hz (A). 
-if this happened, everything is ok. If not, maybe you need to setup your audio (Media -> Audio settings), or there is another problem. 
-
-If you have difficulties getting Pd to work, feel free to contact me — I'll try to help as much as I can. 
-2 - Open and Run the Click Tracker Patch
-
-Once you have Pd installed and running, you can open the zip file with the patch: 
-unpack the file to a new folder 
-within Pd open up the file named click-tracker.pd 
-there you have the Click tracker. Click "Open score" (or press the key "o") to open a score 
-open up the file examples/score-tutorial.txt that is in the folder of the patch 
-click Play (or press space) to start hearing the score. 
- And that's it. If you click on the Instructions button you'll find a short explanation of the patch. But to get more detailed informations, and to know how to start a new score, you should open score-tutorial.txt with a text editor. This file isn't only a score, but also a full tutorial explaining how the program works. 
+If you want to be informed of new versions, please [mailto:jmmmpais@googlemail.com?&body=Hi%20João,%0A%0a send me] your contact.
 
 
-Alternatively, look up the same tutorial online. 
+=How to install and run the Click Tracker patch=
+==1 - Install Pure Data Extended==
+The software runs with Pure Data-Extended (Pd for short), which you must install first. Pure Data is a free software for live electronics. Installing it on your computer should be an easy process, just do the following:
+
+ * go to the <a href="http://puredata.info/downloads">downloads</a> section on the Pd website (left corner)
+ * download the release of Pd-Extended that fits your system ("pd-extended" section)
+ * install the program and start it, the window “Pd-extended” will appear
+ * go to the menu Media -> "Test Audio and MIDI"
+ * in the new window, on the left side under "TEST TONES", try clicking on the values “80” or “60” (volume values in decibels). You should hear a sine tone at 440 Hz (A).
+ * if this happened, everything is ok. If not, maybe you need to setup your audio (Media -> Audio settings), or there is another problem.
+
+If you have difficulties getting Pd to work, feel free to contact me — I'll try to help as much as I can.
+ 
+==2 - Open and Run the Click Tracker Patch==
+
+Once you have Pd installed and running, you can open the zip file with the patch:
+ * unpack the file to a new folder
+ * within Pd open up the file named *click-tracker.pd*
+ * there you have the Click tracker. Click "Open score" (or press the key "o") to open a score
+ * open up the file *examples/score-tutorial.txt* that is in the folder of the patch
+ * click Play (or press space) to start hearing the score.
+ 
+And that's it. If you click on the Instructions button you'll find a short explanation of the patch. But to get more detailed informations, and to know how to start a new score, you should open *score-tutorial.txt* with a text editor. This file isn't only a score, but also a full tutorial explaining how the program works.
+
+Alternatively, look up the same tutorial [http://code.google.com/p/clicktracker/wiki/ClickTrackerTutorial online].
 
 After you went through it, you can also see other score examples that I put in the same folder: excerpts by Stravinsky, Boulez and Nunes.
