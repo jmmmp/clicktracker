@@ -175,6 +175,8 @@ tc 120 4 # here is the tempo change command - always write them before the beat
 1
 
 # And now it slows down to slower as the initial tempo:
+
+# Bar 20
 tc 50 4
 1 b # here starts to get slower
 1
@@ -196,10 +198,13 @@ In case you use the "Go to bar" feature (more about that later) to start in the 
 
 {{{
 # Here is a new irregular bar back at MM60
+
+# Bar 22
 t 60
 1 b
 1
 .5
+
 # And now the same bar repeated 3 times:
 rep 2.5 3
 1 b
