@@ -29,6 +29,7 @@ You start the score by writing the duration of each beat in one line - for examp
 For example here are the first two 4/4 bars of this score:
 
 {{{
+# Bar 1
 t 60
 1 b
 1
@@ -45,6 +46,7 @@ These were two regular bars where each beat has the same duration. The bar symbo
 The tempo is MM60 as indicated by the command "t 60" (with space in between). You can use the t command anywhere in the piece and how many times you want - just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note:
 
 {{{
+# Bar 3
 t 60
 1 b
 t 120
@@ -72,6 +74,7 @@ Notice that all decimal values must be written with a dot instead of a comma.
 There is another way to notate factional values - through the fraction that calculates the value. You can use any values on both sides of the fraction. Here follow some values notated in both ways:
 
 {{{
+# Bar 5
 0.5 b
 1:2
 0.666
@@ -103,6 +106,7 @@ Also you don't have to layout all you music lines one after the other. They can 
 # Here is an empty space. You can have as many as you want.
 
 
+# Bar 7
 1 # And some more beats
 
 1
@@ -114,6 +118,7 @@ Also you don't have to layout all you music lines one after the other. They can 
 The options that you saw until now allow you to notation quite complex durations to create irregular bars. But in case your piece is simpler than that you can notate it in another way: through the format x/y - like a normal bar. For example with only a couple lines we can create a simple bar sequence:
 
 {{{
+# Bar 8
 4/4 # This goes from 4/4
 3/4 # ...
 2/4 # ...
@@ -123,6 +128,7 @@ The options that you saw until now allow you to notation quite complex durations
 But you can use any ratio you want to. Important is only that the top number is a whole number (no decimal numbers allowed). On the other hand the lower number can be decimal if you want to. For example:
 
 {{{
+# Bar 12
 4/6
 5/8.5
 }}}
@@ -130,6 +136,7 @@ But you can use any ratio you want to. Important is only that the top number is 
 If you use this method the result will be the y proportion (4 = 1 beat) repeated x times. So if you write 5/8 you will get an 8th-note 5 times instead of the combination 3+2/8. Here is the difference:
 
 {{{
+# Bar 14
 5/8 # A bar with 5 8th-notes
 
 .5 b # The same written in another way
@@ -151,6 +158,7 @@ To change the tempo suddenly we already saw the t command. But to create gradual
 Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo:
 
 {{{
+# Bar 17
 1 b
 1
 1
