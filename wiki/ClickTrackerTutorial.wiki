@@ -16,13 +16,15 @@
 ==Click Tracker - Score format and program settings==
 ===by João Pais===
 
-This is a tutorial on how to prepare a score for the Click Tracker patch. At the same time it should teach you on how to use the program.
+This is a tutorial on how to prepare a score for the Click Tracker patch. It should teach you on how to use the program.
 
 The Click Tracker reads documents in text format (.txt). For that they should be saved as text-only format - in case you use Word or any other office software you should pay attention to this.
 
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program - basically you must write down the metrical structure of the score.
 
 ===Notating beats / bars / tempo / comments===
+
+This tutorial is a "piece" in itself. You can see it in traditional musical notation [https://www.facebook.com/photo.php?fbid=157550660964898 HERE].
 
 You start the score by writing the duration of each beat in one line - for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar - separated by a space.
 
