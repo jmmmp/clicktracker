@@ -1,3 +1,5 @@
+#summary Download and installation instructions
+
 =Download=
 *[http://clicktracker.googlecode.com/files/click-tracker-1.15.zip CLICK HERE]* to download the latest version.
 
