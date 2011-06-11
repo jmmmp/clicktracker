@@ -12,8 +12,9 @@ If you want to be informed of new versions, please [mailto:jmmmpais@googlemail.c
 ==1 - Install Pure Data Extended==
 The software runs with Pure Data-Extended (Pd for short), which you must install first. Pure Data is a free software for live electronics. Installing it on your computer should be an easy process, just do the following:
 
- * go to the <a href="http://puredata.info/downloads">downloads</a> section on the Pd website (left corner)
- * download the release of Pd-Extended that fits your system ("pd-extended" section)
+ * go to the <a href="http://puredata.info/downloads">download Pd</a> section on the Pd website (left corner)
+ * choose Pd Extended
+ * download the release of Pd-Extended that fits your system
  * install the program and start it, the window “Pd-extended” will appear
  * go to the menu Media -> "Test Audio and MIDI"
  * in the new window, on the left side under "TEST TONES", try clicking on the values “80” or “60” (volume values in decibels). You should hear a sine tone at 440 Hz (A).
