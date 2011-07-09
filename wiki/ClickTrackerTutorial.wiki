@@ -330,7 +330,7 @@ pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $
 
 first $1 - number of the first bar of the score - e.g. first 35
 
-par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters
+par cl/clst/st/stbb  english/deutsch/italiano/castellano/portugues  wav/mp3/ogg - playback parameters
 }}}
 
 ===Keyboard shortcuts===
