@@ -324,7 +324,7 @@ $1/$2 - abreviated input of regular bars - e.g. 3/4
 
 tc $1 $2 - tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) - e.g. tc 120 5
 
-rep $1 $2 - repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat - e.g. rep 4 3
+rep $1 $2 - repetition of a fragment. $1 = sum of the beats to repeat / $2 = number of times to repeat - e.g. rep 4 3
 
 pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) - e.g. pickup 2
 
