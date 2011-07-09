@@ -316,7 +316,7 @@ That's all there is to it. For more informations/requests contact me at jmmmpais
 {{{ 
 t $1 - Tempo in MM - e.g. t 70
 
-[beat duration] b - b marks the beginning of a bar
+[beat duration] b - beat duration, a b afterwards marks the beginning of a bar
 
 $1:$2 - fractional notation for the duration of beats - e.g. 2:3
 
