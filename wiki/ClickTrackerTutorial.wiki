@@ -314,21 +314,21 @@ That's all there is to it. For more informations/requests contact me at jmmmpais
 ===Command list===
 
 {{{ 
-t $1 - Tempo in MM - Eg. t 70
+t $1 - Tempo in MM - e.g. t 70
 
 [beat duration] b - b marks the beginning of a bar
 
-$1:$2 - fractional notation for the duration of beats - Eg. 2:3
+$1:$2 - fractional notation for the duration of beats - e.g. 2:3
 
-$1/$2 - abreviated input of regular bars - Eg. 3/4
+$1/$2 - abreviated input of regular bars - e.g. 3/4
 
-tc $1 $2 - tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) - Eg. tc 120 5
+tc $1 $2 - tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) - e.g. tc 120 5
 
-rep $1 $2 - repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat - Eg. rep 4 3
+rep $1 $2 - repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat - e.g. rep 4 3
 
-pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) - Eg. pickup 2
+pickup $1 - pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) - e.g. pickup 2
 
-first $1 - number of the first bar of the score - Eg. first 35
+first $1 - number of the first bar of the score - e.g. first 35
 
 par cl/clst/st/stbb  english/deutsch/castellano/portugues  wav/mp3/ogg - playback parameters
 }}}
