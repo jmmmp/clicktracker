@@ -307,9 +307,11 @@ Pickup bar - How many pickup bars you want to have?
 
 1st beat - Mute other beats besides the 1st one in each bar.
 
+Loop - loops from current bar to the bar indicated in "Loop to".
+
 That's all there is to it. For more informations/requests contact me at jmmmpais@googlemail.com. If you have a request for a program or need to develop anything else we can discuss it.
 
-====(c) João Pais 11.07.2010====
+====(c) João Pais 13.04.2014====
 
 ===Command list===
 
