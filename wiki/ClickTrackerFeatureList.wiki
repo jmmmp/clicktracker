@@ -1,7 +1,7 @@
 #summary Click Tracker Feature List
 #labels Featured,Phase-Implementation
 
-=Click Tracker Feature List – 16.01.2011=
+=Click Tracker Feature List – 30.11.2014=
 This is the current list of programmed and planned features.
 
 You can support financially the implementation of any of these features, or comission specific features or enhancements directly from the author (for example, with [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=912854 Paypal]). 
@@ -56,7 +56,7 @@ To program a specific feature [mailto:jmmmpais@googlemail.com?&body=Hi%20João,%
 <tr> <td>Beat number only</td> <td align="center">X</td> <td></td></tr>
 <tr> <td>Supress beats after 1st one</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Playback with volume control</td> <td align="center">X</td> <td></td> </tr>
-<tr> <td>Automatic file selection</td> <td align="center">X</td> </tr>
+<tr> <td>Automatic file selection</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Midi event output</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>OSC event output</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Wav bounce</td> <td align="center">X</td> <td></td> </tr>
@@ -67,7 +67,7 @@ To program a specific feature [mailto:jmmmpais@googlemail.com?&body=Hi%20João,%
 
 <tr> <td colspan="3"><b>Track languages</b></td> </tr>
 <tr> <td>English</td> <td align="center">X</td> <td></td> </tr>
-<tr> <td>German</td> <td align="center">X</td> </tr>
+<tr> <td>German</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>French</td> <td></td> <td align="center">X</td> </tr>
 <tr> <td>Italian</td> <td align="center">X</td> <td></td> </tr>
 <tr> <td>Spanish</td> <td align="center">X</td> <td></td> </tr>
