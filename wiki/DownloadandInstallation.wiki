@@ -1,7 +1,7 @@
 #summary Download and installation instructions
 
 =Download=
-*[http://clicktracker.googlecode.com/files/click-tracker-1.15.zip CLICK HERE]* to download the latest version.
+*[https://googledrive.com/host/0BwQnf_x99zzSR2tZd21BTDV5ZGc/click-tracker-1.3.zip CLICK HERE]* to download version 1.3.
 
 *Windows users:* If Pd complains about mp3 and/or ogg support, download [http://puredata.info/Members/jmmmp/ogg-mp3libs.zip/at_download/file this] file and copy the files inside to your C:/Windows/System32 folder.
 
