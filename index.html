@@ -78,8 +78,7 @@ xx adicionar meu contacto em
 <h4>NOTATING BEATS / BARS / TEMPO / COMMENTS</h4>
 <p>You start the score by writing the duration of each beat in one line - for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar - separated by a space.</p>
 <p>For example here are the first two 4/4 bars of this score:</p>
-```
-Bar 1
+<code>Bar 1
 t 60
 1 b
 1
@@ -88,12 +87,10 @@ t 60
 1 b
 1
 1
-1
-```
+1</code>
 <p>These were two regular bars where each beat has the same duration. The bar symbol (b) only has to be used in the beginning of each bar. After that you only have to write the duration of the beats: the program will count both beats and bars automatically.</p>
 <p>The tempo is MM60 as indicated by the command "t 60" (with space in between). You can use the t command anywhere in the piece and how many times you want - just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note:</p>
-```
-Bar 3
+<code>Bar 3
 t 60
 1 b
 t 120
@@ -101,8 +98,7 @@ t 120
 t 30
 1
 t 90
-1
-```
+1</code>
 <p>In case you forget to say which tempo you want the program will assume that the piece is at MM60.</p>
 <p>If your time signature is irregular you can change the duration of each beat - including decimal values. The next bar sounds just like the previous one but in the same tempo throughout:
 
