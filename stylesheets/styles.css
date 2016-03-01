@@ -28,7 +28,7 @@ time, mark, audio, video {
 body {
   padding:10px 50px 0 0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	color: #232323;
 	background-color: #FBFAF7;
 	margin: 0;
@@ -39,11 +39,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#232323;
-  margin:36px 0 10px;
+  margin:16px 0 10px;
 }
 
 p, ul, ol, table, dl {
-  margin:0 0 22px;
+  margin:0 0 12px;
 }
 
 h1, h2, h3 {
@@ -208,7 +208,7 @@ td {
 
 /* Wrapper */
 .wrapper {
-  width:960px;
+  width:870px;
 }
 
 
@@ -217,7 +217,7 @@ td {
 header {
 	background-color: #171717;
 	color: #FDFDFB;
-  width:170px;
+  width:150px;
   float:left;
   position:fixed;
 	border: 1px solid #000;
@@ -227,18 +227,18 @@ header {
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
+	padding: 14px 25px 12px 20px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
 p.header {
-	font-size: 16px;
+	font-size: 13px;
 }
 
 h1.header {
 	font-family: Arvo, sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.3em;
 	border-bottom: none;
@@ -303,7 +303,7 @@ a.buttons {
 	font-weight: normal;
 	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
 	padding: 2px 2px 2px 22px;
-	height: 30px;
+	height: 20px;
 }
 
 a.github {
