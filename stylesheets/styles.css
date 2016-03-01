@@ -76,8 +76,8 @@ h4, h5, h6 {
 }
 
 a {
-  color:#C30000;
-  font-weight:200;
+  color:#EE0000;
+  font-weight: bold;
   text-decoration:none;
 }
 
@@ -165,7 +165,7 @@ p img {
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
-  font-size:14px;
+  font-size:13px;
 }
 
 pre {
