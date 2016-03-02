@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, dl {
-  margin:0 0 12px;
+  margin:0 0 6px;
 }
 
 h1, h2, h3 {
@@ -186,7 +186,7 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   margin-bottom: 32px;
   text-align: left;
  }
@@ -201,8 +201,8 @@ th {
  }
 
 td {
-  padding: 10px;
-	background: #ccc;
+  padding: 0px;
+	/*background: #ccc;*/
  }
 
 
