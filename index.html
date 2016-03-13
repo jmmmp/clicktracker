@@ -122,6 +122,7 @@ The Click Tracker reads documents in text format (.txt). For that they should be
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program &ndash; basically you must write down the metrical structure of the score.<br>
 The following score will be coded in the tutorial. You can find it under examples/score-tutorial.txt.</p>
 <center><img src="images/score-tutorial.png"></center>
+
 <h4>NOTATING BEATS / BARS / TEMPO / COMMENTS</h4>
 <p>You start the score by writing the duration of each beat in one line &ndash; for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar &ndash; separated by a space.<br>
 For example here are the first two 4/4 bars of this score. Bars 1+2:</p>
@@ -201,6 +202,7 @@ The options that you saw until now allow you to notation quite complex durations
 <pre><code>1.5 b  
 1</code></pre>
 <p>Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.</p>
+
 <h4>GRADUAL TEMPO CHANGES</h4>
 <p>To change the tempo suddenly we already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts. If it doesn't the rest of the piece will sound a bit strange.<br>
 Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo. Bar 17:</p>
@@ -232,6 +234,7 @@ Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in 
 1
 1
 1</code></pre>
+
 <h4>REPETITIONS</h4>
 <p>Repetitions of the same bar can be used a lot in modern music. Since the program counts the bars automatically it's different to write the repetitions down and to just repeat a sequence. Also a repetition isn't a new bar (with a different bar number) but the same bar again.<br>
 In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again &ndash; x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.<br>
@@ -258,14 +261,18 @@ rep 2.5 4
 <pre><code>1 b
 1
 .5</code></pre>
+
 <h4>PICKUP BAR</h4>
 <p>In a performance you can't start the click track without warning &ndash; with the "pickup x" comand it is possible to repeat the 1st bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.<br>
 You can either include this command in the score file (anywhere in the score but I suggest you to leave it on top) &ndash; or change it anytime in the patch itself. To have 1 pickup bar write "pickup 1".<br>
 As pickup bars aren't exactly repetitions and you must know exactly when the piece is going to start the bar numbers in pickup bars work downwards until they get to 1 &ndash; which is point where the score begins. In case you have 1 pickup bar you'll and your chosen output has voice included you'll hear bar "2 [beats] 1". If you have 2 pickup bars then "3 [beats] 2 [beats] 1".</p>
+
 <h4>OTHER FIRST BAR NUMBER</h4>
 <p>With the comand "first x" you can define the number of the first bar to be played &ndash; in case your click track doesn't begin at bar 1. If you want to rehearse with another first number for now you'll have to use the bar numbers as if they would start from 1.</p>
+
 <h4>BEAT COUNTING DIRECTION</h4>
 <p>With the command "direction up" or "direction down" you can define if the beats inside a bar are counted upwards or downwards. If no command is used the standard value is "up". This can be set anytime in the patch using the button "beat.dir".</p>
+
 <h4>DEFINITION OF PLAYBACK PARAMETERS</h4>
 <p>You can adjust the playback parameters (click format &ndash; language &ndash; recording format) anytime while working with the patch. But you can also adjust them in the score file. Then you don't need to always reset your patch when you load a new score (assuming each score has a different setting). To set a parameter you just write the command "par [parameters]" anywhere in the score. But like with the pickup command I advise you to put these general remarks in the beginning. Note: if you write down more than one command for the same parameter then the last command is the one to be valid.<br>
 The available parameters are:<br>
@@ -278,6 +285,7 @@ For example to have a click track performed with clicks and recorded in mp3 you 
 <pre><code>par st portugues wav</code></pre>
 <p>The standard format is voice + click / english / wav. Since there were some other commands before let's set it back to the standard preset.</p>
 <pre><code>par clst english wav</code></pre>
+
 <h4>GUI CONTROL</h4>
 <p>The explanation of the score format is finished. The next part handles the GUI and how to work with the program.<br>
 File commands (keyboard shortcuts between []): <br>
@@ -303,9 +311,8 @@ File commands (keyboard shortcuts between []): <br>
 <strong>Loop</strong> &ndash; loops from current bar to the bar indicated in "Loop to"<br>
 <strong>Beat.dir</strong> &ndash; changes beat counting direction up or downwards<br>
 <strong>Display</strong> &ndash; shows large window with beat + bar numbers</p>
-<p>For more informations/requests feel free to <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
 
-<h4>LIST OF COMMANDS </h4>
+<h4>COMMAND LIST</h4>
 <p><strong>t $1</strong> &ndash; Tempo in MM &ndash; Eg. t 70<br>
 <strong>[beat duration] b</strong> &ndash; b marks the beginning of a bar<br>
 <strong>$1:$2</strong> &ndash; fractional notation for the duration of beats &ndash; Eg. 2:3<br>
@@ -325,6 +332,9 @@ File commands (keyboard shortcuts between []): <br>
 <strong>f</strong> &ndash; set output file<br>
 <strong>r</strong> &ndash; play + record<br>
 <strong>Esc</strong> &ndash; turn keyboard control on/off</p>
+
+<br>
+<p>For more informations/requests feel free to <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
 <p><strong>&copy; João Pais  02.03.2016</strong></p>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
