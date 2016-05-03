@@ -20,15 +20,16 @@
         <h1 class="header">Click Tracker</h1>
         <p class="header">Click Tracker is a generator of click tracks. It is designed for composers, conductors and instrumentalists working with modern music.</p>
         <ul>
-          <a class="buttons" href="#donations">Price/Donations</a>
-          <a class="buttons" href="#testimonials">Users/Testimonials</a>
-          <a class="buttons" href="#development">Development</a>
-          <a class="buttons" href="#repository">Score repository</a>
-          <a class="buttons" href="#license">License</a>
-          <a class="buttons" href="#download">Download/Installation</a>
-		  <a class="buttons" href="#feature">Feature list</a>
-          <a class="buttons" href="#tutorial">Tutorial</a>
-          <a class="buttons" href="http://j.mp/clicktrackerfb" target="_blank">Facebook</a>
+          <a class="buttons" href="#donations">Price/Donations</a><br>
+          <a class="buttons" href="#testimonials">Users/Testimonials</a><br>
+          <a class="buttons" href="#development">Development</a><br>
+          <a class="buttons" href="#repository">Score repository</a><br>
+          <a class="buttons" href="#license">License</a><br>
+          <a class="buttons" href="#download">Download/Installation</a><br>
+          <a class="buttons" href="#tutorial">Tutorial</a><br>
+		  <a class="buttons" href="#feature">Feature list</a><br>
+		  <a class="buttons" href="#afeature">Advanced Features</a><br>
+          <a class="buttons" href="http://j.mp/clicktrackerfb" target="_blank">Facebook</a><br>
           <a class="buttons" href="http://j.mp/clicktrackergp" target="_blank">Google+</a>
         </ul>
         <p class="header">Software by <a class="header name" href="http://j.mp/jmmmpfb">João Pais</a></p>
@@ -39,7 +40,7 @@
 <a id="click-tracker-software" class="anchor" href="http://j.mp/click-tracker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Click Tracker</h1>
 <p>Click Tracker is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of any score, no matter how complex it is.</p>
 <center><img src="images/click-tracker.png"></center>
-<p>This software runs under the open source program Pure Data, and can be used either by conductors in concert, by musicians for practice purposes, by composers while composing — or just to produce and record a click track to be played back at a later point.</p>
+<p>This software runs in Windows, OSX and Linux under the open source program Pure Data, and can be used either by conductors in concert, by musicians for practice purposes, by composers while composing — or just to produce and record a click track to be played back at a later point.</p>
 <p>To prepare a score, just input the values in a plain text file format (.txt) according to the syntax explained in the tutorial online, or sent with the program.</p>
 
 
@@ -101,10 +102,11 @@ Click Tracker by João Pais is licensed under a Creative Commons Attribution Non
 If you wish to use this software in any way not allowed by this license, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20licensing">contact the author</a>.<br>
 If you wish to do commercial work with this software, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20licensing">contact the author</a>.</p>
 
+
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and installation</h2>
 <p><a href="http://j.mp/clicktracker14">CLICK HERE</a> to download version 1.4.<br>
-<strong>Windows users: </strong>If Pd complains about mp3 and/or ogg support, download <a href="http://puredata.info/Members/jmmmp/ogg-mp3libs.zip/at_download/file">this</a> file and copy the files to your C:/Windows/System32 folder.<br>
+<strong>Windows users: </strong>If Pure Data complains about mp3 and/or ogg support, download <a href="http://puredata.info/Members/jmmmp/ogg-mp3libs.zip/at_download/file">this</a> file and copy the files to your C:/Windows/System32 folder.<br>
 If you want to be informed of new versions, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20mailing%20list">send me your contact</a>.</p>
 <h4>How to install and run the Click Tracker patch</h4>
 <p><strong>1 &ndash; Install Pure Data Extended</strong><br>
@@ -132,13 +134,6 @@ And that's it. If you click on the Instructions button you'll find a short expla
 Alternatively, look up the same tutorial <a href="#tutorial">below</a>.<br>
 After you went through it, you can also see other score examples that I put in the same folder: excerpts by Stravinsky, Boulez, Stockhausen, Lang and Nunes.</p>
 
-<h2>
-<a id="feature" class="anchor" href="#feature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature list</h2>
-<p>Here follow the current list of programmed features and features to program. If any of these interest you, feel free to <a href="#development">commission</a> them &ndash; or any other suggestions you might have.</p>
-<h4>Programmed features</h4>
-<center><img src="images/features-prog.png" width="477" height="768"></center>
-<h4>Features to program</h4>
-<center><img src="images/features-unprog.png" width="476" height="596"></center>
 
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
@@ -311,7 +306,7 @@ For example to have a click track performed with clicks and recorded in mp3 you 
 <p>The standard format is voice + click / english / wav. Since there were some other commands before let's set it back to the standard preset.</p>
 <pre><code>par clst english wav</code></pre>
 
-<h4>GUI CONTROL</h4>
+<h3>GUI CONTROL</h3>
 <p>The explanation of the score format is finished. The next part handles the GUI and how to work with the program.<br>
 File commands (keyboard shortcuts between []): <br>
  <strong>Open score [o] / reload score [l]</strong> &ndash; open a score file or reload one (in case you're working a lot on the same file)<br>
@@ -337,7 +332,7 @@ File commands (keyboard shortcuts between []): <br>
 <strong>Beat.dir</strong> &ndash; changes beat counting direction up or downwards<br>
 <strong>Display</strong> &ndash; shows large window with beat + bar numbers</p>
 
-<h4>COMMAND LIST</h4>
+<h3>COMMAND LIST</h3>
 <p><strong>t $1</strong> &ndash; Tempo in MM &ndash; Eg. t 70<br>
 <strong>[beat duration] b</strong> &ndash; b marks the beginning of a bar<br>
 <strong>$1:$2</strong> &ndash; fractional notation for the duration of beats &ndash; Eg. 2:3<br>
@@ -347,9 +342,12 @@ File commands (keyboard shortcuts between []): <br>
 <strong>pickup $1</strong> &ndash; pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; Eg. pickup 2<br>
 <strong>first $1</strong> &ndash; number of the first bar of the score &ndash; Eg. first 35<br>
 <strong>par&ensp;cl/clst/st/stbb&ensp;english/deutsch/espanol/portugues&ensp;wav/mp3/ogg</strong> &ndash; playback parameters<br>
-<strong>direction up/down</strong> &ndash; changes beat counting direction up or downwards. Default is upwards.</p>
+<strong>direction up/down</strong> &ndash; changes beat counting direction up or downwards. Default is upwards.<br>
+<strong>osc port $1</strong> &ndash; set receiving port<br>
+<strong>osc sendip $1</strong> &ndash; set send IP<br>
+<strong>osc sendpo $1</strong> &ndash; set send port<br>
 
-<h4>KEYBOARD SHORTCUTS</h4>
+<h3>KEYBOARD SHORTCUTS</h3>
 <p><strong>o</strong> &ndash; open score<br>
 <strong>l</strong> &ndash; reload score<br>
 <strong>space</strong> &ndash; play/stop<br>
@@ -357,10 +355,54 @@ File commands (keyboard shortcuts between []): <br>
 <strong>f</strong> &ndash; set output file<br>
 <strong>r</strong> &ndash; play + record<br>
 <strong>Esc</strong> &ndash; turn keyboard control on/off</p>
+See the <a href="#afeature">Advanced Features</a> section for details on other features.
 
-<br>
-<p>For more informations/requests feel free to <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais  02.03.2016</strong></p>
+<h2>
+<a id="feature" class="anchor" href="#feature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature list</h2>
+<p>Here are the current list of programmed features and features to program. If any of these interest you, you can <a href="#development">commission</a> them &ndash; or any other suggestions you might have.</p>
+<h4>Programmed features</h4>
+<!-- images 50% size -->
+<center><img src="images/features-prog.png" width="368" height="906"></center>
+<h4>Features to program</h4>
+<center><img src="images/features-unprog.png" width="364" height="719"></center>
+
+
+<h2>
+<a id="afeature" class="anchor" href="#afeature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Advanced Features</h2>
+You can find an example patch with the following features in <strong>examples/tutorial-subpatch osc.pd</strong>.
+
+<h3>Click Tracker as subpatch</h3>
+<p>The Click Tracker can be used as a subpatch of another Pure Data patch - it has one inlet for control messages and two outlets for sound and messages.<br>
+It is useful if you add the line "subpatch" to your score: this will turn off the keyboard control, and route the sound output out of the main dac to the left outlet.</p>
+
+<h3>OSC Controls</h3>
+<p>Click on OSC to open the OSC settings window. There you can set:
+<ul>
+<li>Receive port - the receive port of the Click Tracker patch. The default port is 5625.</li>
+<li>Send Adress / Port - IP Adress and Port where the Click Tracker is sending to. The default value is 127.0.0.1.</li>
+<li>Debug messages on/off - turn on to see any error messages from false OSC commands. The default port is 5626.</li>
+</ul>
+It also displays the IP of the address controlling the Click Tracker.</p>
+
+<h4>OSC Setup in the score file</h4>
+You can setup the OSC parameters in your score. For that, use the following commands:
+<ul>
+<li>osc port $1 - set receiving port</li>
+<li>osc sendip $1 - set send IP</li>
+<li>osc sendport $1 - set send port</li>
+</ul>
+
+<h4>OSC Variables</h4>
+<p>These are the OSC variables defined in the Click Tracker. As argument you can use either nothing (-), a symbol (s), float (f), a 0/1 combination, or a range of numbers (x-y).</p>
+
+<h4>Outoing variables</h4>
+<center><img src="images/OSC-out.png" width="343" height="161"></center>
+<h4>Incoming variables</h4>
+<center><img src="images/OSC-in.png" width="344" height="404"></center>
+
+<p>For more informations/requests <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
+<p><strong>&copy; João Pais  03.05.2016</strong></p>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 		          <script type="text/javascript">
