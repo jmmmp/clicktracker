@@ -224,13 +224,13 @@ The options that you saw until now allow you to notation quite complex durations
 <p>Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.</p>
 
 <h4>GRADUAL TEMPO CHANGES</h4>
-<p>To change the tempo suddenly we already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts. If it doesn't the rest of the piece will sound a bit strange.<br>
+<p>To change the tempo suddenly we already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts: for example, if it lasts 1+1+0.75 beats, the result is 2.75.<br>
 Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo. Bar 17:</p>
 <pre><code>1 b
 1
 1
 1</code></pre>
-<p>here is the tempo change command &ndash; always write them before the beat</p>
+<p>here is the tempo change command &ndash; always write them before the first tempo change</p>
 <pre><code>tc 120 4</code></pre>
 <p>the accelerando starts here</p>
 <pre><code>1 b 
