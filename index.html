@@ -65,7 +65,7 @@ An invoice can be written for donations.</p>
 
 <h2>
 <a id="testimonials" class="anchor" href="#testimonials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Users and testimonials</h2>
-<p>The Click Tracker is used by instrumentalists, conductors and composers such as: Anna D'Errico, Carl Ludwig Hübsch, Haakon Stene, Matteo Cesari, Pavlos Antoniadis, Stefan Prins, Jack Quartet, and the ensembles Asamisimasa, Nadar, Interface, loadbang and Schlagquartett Köln.<br>
+<p>The Click Tracker is used by instrumentalists, conductors and composers such as: Anna D'Errico, Carl Ludwig Hübsch, Carola Bauckholt, Haakon Stene, Matteo Cesari, Pavlos Antoniadis, Stefan Prins, Jack Quartet, and the ensembles Asamisimasa, Nadar, Interface, loadbang and Schlagquartett Köln.<br>
 This is what some users have to say about the software:</p>
 <blockquote>The Click Tracker is an essential tool for the new generation of musicians. It allows the cautious interpreter to master the intricacy of time structures at ease.</blockquote>
 <qauthor><a href="http://www.matteocesari.com/" target="_blank">Matteo Cesari</a>&ensp;flutist</qauthor>
@@ -114,19 +114,20 @@ If you wish to do commercial work with this software, please <a href="mailto:jmm
 
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and installation</h2>
-<p><a href="http://bit.ly/clicktracker16">CLICK HERE</a> to download version 1.6.<br>
+<p><a href="http://bit.ly/clicktracker17">CLICK HERE</a> to download version 1.7.<br>
 If you want to be informed of new versions, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20mailing%20list">send me your contact</a>.</p>
 <h4>How to install and run the Click Tracker patch</h4>
 <p><strong>1 &ndash; Install and test Pure Data</strong><br>
 The software runs with Pure Data (Pd for short), which you must install first. Pure Data is a free software for live electronics. Follow these steps to install and test the software:<br>
 <ul>
-<li>download the <strong>32 bit release</strong> of <a href="http://puredata.info/downloads/pure-data">Pure Data</a>. (Do not install the 64 bit version)</li>
+<li>download the <strong>64 bit release</strong> of <a href="http://puredata.info/downloads/pure-data">Pure Data</a>. (Do not install the 32 bit version)</li>
 <li>install the program and start it, the window “Pd” will appear</li>
 <li>go to the menu Media -> "Test Audio and MIDI"</li>
 <li>on the left side under "TEST TONES", try clicking on the values “80” or “60” (volume values in decibels). You should hear a sine tone at 440 Hz (A).</li>
 <li>if this happened, everything is ok. If not, maybe you need to setup your audio (Media -> Audio settings), or there is another problem.</li>
 </ul>
-If you have difficulties getting Pd to work, feel free to <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20Pd%20help">contact me</a> &ndash; I'll try to help as much as I can.</p>
+If you have difficulties getting Pd to work, feel free to <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20Pd%20help">contact me</a> &ndash; I'll try to help as much as I can.<br>
+For macOS Catalina users: due to the new Apple restrictions, it might be necessary to right-click to start the Pd application.</p>
 <p><strong>2 &ndash; Open and Run the Click Tracker Patch</strong><br>
 Once you have Pd installed and running, you can open the zip file with the patch:<br>
 <ul>
@@ -355,7 +356,7 @@ The Click Tracker's GUI offers the following possibilities (keyboard shortcuts a
 <strong>Tempo scaler</strong> &ndash; if a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown.<br>
 <strong>1st beat</strong> &ndash; Mute other beats besides the 1st one in each bar.<br>
 <strong>Loop</strong> &ndash; loops from current bar to the bar indicated in "Loop to"<br>
-<strong>Volume</strong> &ndash; Volume as defined in the score<br>
+<strong>Track Volume</strong> &ndash; Volume as defined in the score<br>
 <strong>Output volume meter + volume level</strong> &ndash; self explanatory<br>
 <strong>Beat.dir</strong> &ndash; changes beat counting direction up or downwards<br>
 <strong>Display</strong> &ndash; shows large window with beat + bar numbers</p>
@@ -417,10 +418,10 @@ It is useful if you add the line "subpatch" to your score: this will turn off th
 <p>Click on OSC to open the OSC settings window. There you can set:
 <ul>
 <li>Receive port - the receive port of the Click Tracker patch. The default port is 5625.</li>
-<li>Send Adress / Port - IP Adress and Port where the Click Tracker is sending to. The default value is 127.0.0.1.</li>
+<li>Send Adress / Port - IP Adress and Port where the Click Tracker is sending to. The default value is 127.0.0.1. You must activate the "connect OSC" button.</li>
 <li>Debug messages on/off - turn on to see any error messages from false OSC commands. The default port is 5626.</li>
 </ul>
-It also displays the IP of the address controlling the Click Tracker.</p>
+</p>
 
 <h4>OSC Setup in the score file</h4>
 You can setup the OSC parameters in your score. For that, use the following commands:
@@ -440,7 +441,7 @@ You can setup the OSC parameters in your score. For that, use the following comm
 
 
 <p>For more informations/requests <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais  27.12.2018</strong></p>
+<p><strong>&copy; João Pais  25.10.2019</strong></p>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
