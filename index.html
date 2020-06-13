@@ -27,10 +27,10 @@
           <a class="buttons" href="#license">License</a><br>
           <a class="buttons" href="#download">Download/Installation</a><br>
           <a class="buttons" href="#tutorial">Tutorial</a><br>
-		  <a class="buttons" href="#feature">Feature list</a><br>
+		  <a class="buttons" href="#midiexport">Midi Export</a><br>
+		  <a class="buttons" href="#feature">Feature List</a><br>
 		  <a class="buttons" href="#afeature">Advanced Features</a><br>
           <a class="buttons" href="http://j.mp/clicktrackerfb" target="_blank">Facebook</a><br>
-          <a class="buttons" href="http://j.mp/clicktrackergp" target="_blank">Google+</a>
         </ul>
         <p class="header">Software by <a class="header name" href="http://j.mp/jmmmpfb">João Pais</a></p>
       </header>
@@ -56,10 +56,11 @@
 Donations can be easily made through <a href="http://bit.ly/jmmmp-paypal50">PAYPAL</a>. Bank transfers to a german account are also possible (<a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20Donation">contact me</a> for details).<br>
 An invoice can be written for donations.</p>
 <h4>Former sponsors</h4>
-<p>These versions were launched with the support of the following ensembles or individuals:<br>
+<p>These versions were launched with the financial support of the following ensembles or individuals:<br>
 <ul>
 <li>Version 1.3 &ndash; <a href="http://asamisimasa.com/" target="_blank">Ensemble Asamisimasa</a></li>
 <li>Version 1.4 &ndash; <a href="http://www.clhuebsch.de/" target="_blank">Carl Ludwig Hübsch</a></li>
+<li>Version 1.8 &ndash; <a href="http://jeffreygavett.com/" target="_blank">Jeff Gavett</a></li>
 </ul>
 
 
@@ -106,15 +107,14 @@ Every individual or group contributing to the development of this program will b
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License and distribution</h2>
-<p><img src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"><br>
-Click Tracker by João Pais is licensed under a Creative Commons Attribution Non Commercial No Derivs 3.0 Unported License. Based on a work at puredata.info.<br>
-If you wish to use this software in any way not allowed by this license, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20licensing">contact the author</a>.<br>
-If you wish to do commercial work with this software, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20licensing">contact the author</a>.</p>
+<p><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"><br>
+Click Tracker by João Pais is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. Based on a work at puredata.info.<br>
+If you wish to use this software in any way not allowed by this license, or to do commercial work, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20licensing">contact the author</a>.<br>
 
 
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and installation</h2>
-<p><a href="http://bit.ly/clicktracker17a">CLICK HERE</a> to download version 1.7.<br>
+<p><a href="http://bit.ly/clicktracker18">CLICK HERE</a> to download version 1.8.<br>
 If you want to be informed of new versions, please <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20mailing%20list">send me your contact</a>.</p>
 <h4>How to install and run the Click Tracker patch</h4>
 <p><strong>1 &ndash; Install and test Pure Data</strong><br>
@@ -134,36 +134,81 @@ Once you have Pd installed and running, you can open the zip file with the patch
 <li>unpack the file to a new folder</li>
 <li>within Pd open up the file named <strong>click-tracker.pd</strong></li>
 <li>there you have the Click tracker. Click "Open score" (or press the key "o") to open a score</li>
-<li>open up the file <strong>examples/score-tutorial.txt</strong> that is in the folder of the patch</li>
+<li>open up the file <strong>examples/_score-tutorial.txt</strong> that is in the folder of the patch</li>
 <li>click Play (or press space) to start hearing the score.</li>
 </ul>
-And that's it. If you click on the Instructions button you'll find a short explanation of the patch. But to get more detailed informations, and to know how to start a new score, you should open <strong>score-tutorial.txt</strong> with a text editor. This file isn't only a score, but also a full tutorial explaining how the program works.<br>
+And that's it. If you click on the Instructions button you'll find a short explanation of the patch. But to get more detailed informations, and to know how to start a new score, you should open <strong>_score-tutorial.txt</strong> with a text editor. This file isn't only a score, but also a full tutorial explaining how the program works.<br>
 Alternatively, look up the same tutorial <a href="#tutorial">below</a>.<br>
 In the same folder you can find other score excerpts by Stravinsky, Boulez, Stockhausen, Lang and Nunes.</p>
 
 
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
-<p>This is a tutorial on how to prepare a score for the Click Tracker patch. At the same time it should teach you on how to use the program.<br>
-The Click Tracker reads documents in text format (.txt). For that they should be saved as text-only format &ndash; in case you use Word or any other office software you should pay attention to this.<br>
+<p>This is a tutorial on how to prepare a score for the Click Tracker patch, also showing its features.<br>
+The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this.<br>
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program &ndash; basically you must write down the metrical structure of the score.<br>
-The following score will be coded in the tutorial. You can find it under <strong>examples/score-tutorial.txt</strong>.</p>
+The score below will be coded in the tutorial. You can find it under <strong>examples/_score-tutorial.txt</strong>.</p>
 <center><img src="images/score-tutorial.png"></center>
 
-<h4>ADDING BEATS / BARS / TEMPO / COMMENTS</h4>
-<p>You start the score by writing the duration of each beat in one line &ndash; for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar &ndash; separated by a space.<br>
-For example here are the first two 4/4 bars of this score. Bars 1+2:</p>
+<h4>ADDING TEMPO / BARS / COMMENTS</h4>
+<p>You start the score by writing a tempo with the command "t 60" (with space in between) for MM=60  &ndash;  in case you forget to say which tempo you want the program will assume that the piece is at MM60.<p>
+A regular bar can be added with the command x/y &ndash; like a normal bar. For example with only a couple lines we can create a simple bar sequence. Bars 2-5 go from 4/4 to 1/4:</p>
 <pre><code>t 60
-1 b
+4/4
+4/4
+3/4
+2/4
+1/4</code></pre>
+<center><img src="images/score-tutorial-1.png" width="689" height="95"></center>
+<p>But you can use any ratio you want to: for the x/y format, it's only important that the numerator is a whole number (no decimal numbers allowed). On the other hand the denominator can be decimal if you want to. For example bars 6-7:</p>
+<pre><code>4/6
+5/8.5</code></pre>
+<center><img src="images/score-tutorial-2.png" width="399" height="88"></center>
+
+<h4>ADDING BEATS</h4>
+To notate events in higher detail, you can define the duration of each beat in one line &ndash; for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar (separated by a space).<br>
+For example here is a 4/4 and 5/4 bars:</p>
+<pre><code>1 b
 1
 1
 1
 1 b
+1
 1
 1
 1</code></pre>
-<p>These were two regular bars where each beat has the same duration. The bar symbol (b) only has to be used in the beginning of each bar. After that you only have to write the duration of the beats: the program will count both beats and bars automatically.<br>
-The tempo is MM60 as indicated by the command "t 60" (with space in between). You can use the t command anywhere in the piece and how many times you want &ndash; just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note. Bar 3:</p>
+<center><img src="images/score-tutorial-3.png" width="318" height="68"></center>
+<p>The same result is attained with both x/y syntax or with discrete events. These two 5/8 bars are written out differently, but sound the same:</p>
+<pre><code>5/8
+.5 b
+.5
+.5
+.5
+.5</code></pre>
+<p>If you need a bar with irregular divisions, you'll need to define different durations:</p>
+<pre><code>1.5 b  
+1</code></pre>
+<center><img src="images/score-tutorial-4.png" width="476" height="69"></center>
+<p>Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.</p>
+<p>Notice that all decimal values must be written with a dot instead of a comma.<br>
+There is another way to notate factional values &ndash; through the fraction that calculates the value. You can use any values on both sides of the fraction. Here follow some values notated in both ways:</p>
+<pre><code>0.5 b
+1:2
+0.666
+2:3
+0.928
+6.5:7</code></pre>
+<center><img src="images/score-tutorial-5.png" width="255" height="93"></center>
+<p>And now something completely different: a completely irregular bar with some irrational values.</p>
+<pre><code>1 b
+.2
+1.65465439458675
+5.14</code></pre>
+<center><img src="images/score-tutorial-6.png" width="306" height="85"></center>
+
+<h4>CHANGING TEMPI</h4>
+<p>
+You can use the t command anywhere in the piece and how many times you want &ndash; just put it before the note you want it to apply for. For example here is a bar where the tempo changes on each note:</p>
 <pre><code>t 60
 1 b
 t 120
@@ -172,81 +217,43 @@ t 30
 1
 t 90
 1</code></pre>
-<p>In case you forget to say which tempo you want the program will assume that the piece is at MM60.<br>
-If your time signature is irregular you can change the duration of each beat &ndash; including decimal values. Bar 4 sounds just like the previous one but in the same tempo throughout:</p>
+<p>If your time signature is irregular you can change the duration of each beat &ndash; including with decimal values. Bar 16 sounds just like the previous one but in the same tempo throughout:</p>
 <pre><code>t 60
 1 b
 .5
 2
 .666</code></pre>
-<p>Notice that all decimal values must be written with a dot instead of a comma.<br>
-There is another way to notate factional values &ndash; through the fraction that calculates the value. You can use any values on both sides of the fraction. Here follow some values notated in both ways. Bar 5:</p>
-<pre><code>0.5 b
-1:2
-0.666
-2:3
-0.928
-6.5:7</code></pre>
-<p>And now something completely different: a completely irregular bar with some irrational values.</p>
-<pre><code>1 b
-.2
-1.65465439458675
-5.14</code></pre>
-<p>There are no limits for the decimal values you can use. Any value (as long as written correctly) can be played back.<br>
-As you might have noticed by now this file is at the same time the tutorial for the program and also a score that can be performed. The parts with the numbers are the "music" and comments can be made in any place in the file if you put the # symbol before each comment. If you don't use the # symbol with a space afterwards the file won't be properly read by the program.<br>
+<center><img src="images/score-tutorial-7.png" width="429" height="91"></center>
+<p>There are no limits for the decimal values you can use. Any value (as long as written correctly) can be played back.</p>
+
+<h4>ADDING COMMENTS</h4>
+<p>As you might have noticed by now this file is at the same time the tutorial for the program and also a score that can be performed. The parts with the numbers are the "music" and comments can be made in any place in the file if you put the # symbol before each comment. If you don't use the # symbol with a space afterwards the file won't be properly read by the program.<br>
 Very important about the comments: you can't use any commas or semicolons &ndash; it would be misinterpreted by the program!<br>
 Also you don't have to layout all you music lines one after the other. They can have empty lines between them &ndash; as well as comments in the same line:<br>
-Now we're at bar 7. The tempo is 60</p>
 <pre><code>1 b </code></pre>
 <p>Here is the beginning of the bar &ndash; the letter b is after the beat duration.<br>
 Here is an empty space. You can have as many as you want.</p>
 <pre><code>
+
 1
 </code></pre>
 <p>And some more beats</p>
 <pre><code>1
 
-1
 1</code></pre>
-<p>And here the end of the bar. It turned out to be a 5/4 bar.<br>
-The options that you saw until now allow you to notation quite complex durations to create irregular bars. But in case your piece is simpler than that you can notate it in another way: through the format x/y &ndash; like a normal bar. For example with only a couple lines we can create a simple bar sequence. Bars 8-11 go from 4/4 to 1/4:</p>
-<pre><code>4/4
-3/4
-2/4
-1/4</code></pre>
-<p>But you can use any ratio you want to. Important is only that the top number is a whole number (no decimal numbers allowed). On the other hand the lower number can be decimal if you want to. For example bars 12-13:</p>
-<pre><code>4/6
-5/8.5</code></pre>
-<p>If you use this method the result will be the y proportion (4 = 1 beat) repeated x times. So if you write 5/8 you will get an 8th-note 5 times instead of the combination 3+2/8. Here is the difference. Bar 14 has 5 8th-notes:</p>
-<pre><code>5/8  </code></pre>
-<p>The same written in another way</p>
-<pre><code>.5 b
-.5
-.5
-.5
-.5</code></pre>
-<p>And a bar with the same full duration but another division.</p>
-<pre><code>1.5 b  
-1</code></pre>
-<p>Also the y number always understands the 4th-note to be the standard duration. In case you're writing a score where another value is the base value for the tempo (for example 8th-note or minim) then you must do some math to get the proportions right. Always think of the beats as individual durations one after the other.</p>
 
 <h4>GRADUAL TEMPO CHANGES and VOLUME CHANGES</h4>
-<p>To change the tempo suddenly we already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts: for example, if it lasts 1+1+0.75 beats, the result is 2.75.<br>
+<p>To change the tempo suddenly you already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; you can use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts: for example, if it lasts 1+1+0.75 beats, the result is 2.75.<br>
 The "vol x" command scales the loudness of the click so that it fits with the musical content. Values between 0 and 10 are accepted. The scaling is independent of the main output's volume level. If no value is given the score sets to 10.<br>
-Here is a 4/4 bar followed by an accelerando with 1 bar duration and one bar in the new tempo. Bar 17:</p>
-<pre><code>4/4</code></pre>
-<p>Here is the tempo change command &ndash; always write them before the first tempo change. At the same time the volume goes slightly down.</p>
+Here is an accelerando with 1 bar duration and one bar in the new tempo. At the same time the volume goes slightly down.</p>
 <pre><code>tc 120 4
 vol 7</code></pre>
-<p>the accelerando starts here</p>
-<pre><code>4/4</code></pre>
 <p>and now we're in the new tempo. The volume goes lower.</p>
 <pre><code>vol 4
 4/4</code></pre>
-<p>And now it slows down to slower as the initial tempo. Bar 20:</p>
-<pre><code>tc 50 4</code></pre>
-<p>here starts to get slower</p>
-<pre><code>4/4</code></pre>
+<p>And now it slows down to slower as the initial tempo:</p>
+<pre><code>tc 50 4
+4/4</code></pre>
 <p>and now is at MM50. The volume goes up on each beat until it gets back to the maximum.</p>
 <pre><code>vol 5
 1 b
@@ -256,12 +263,12 @@ vol 8
 1
 vol 100
 1</code></pre>
+<center><img src="images/score-tutorial-8.png" width="573" height="103"></center>
 
 <h4>REPETITIONS</h4>
-<p>Repetitions of the same bar can be used a lot in modern music. Since the program counts the bars automatically it's different to write the repetitions down and to just repeat a sequence. Also a repetition isn't a new bar (with a different bar number) but the same bar again.<br>
-In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again &ndash; x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.<br>
+<p>Repetitions of the same bar can be used a lot in modern music. In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again &ndash; x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.<br>
 In case you use the "Go to bar" feature (more about that later) to start in the middle of a repetition sequence it won't work. For a repetition sequence to be correctly performed you must play the first note (since the command is before it).<br>
-Here is a new irregular bar back at MM60. Bar 22:</p>
+Here is a new irregular bar back at MM60:</p>
 <pre><code>t 60
 1 b
 1
@@ -279,33 +286,37 @@ rep 2.5 4
 1 b
 1
 .5</code></pre>
+<center><img src="images/score-tutorial-9.png" width="493" height="82"></center>
 
 <h4>CUES</h4>
-<p>Cues can be added using the syntax "cue x" - where x is the cue number.</p>
+<p>Cues (see below) can be added using the syntax "cue x" - where x is the cue number.</p>
 <pre><code>cue 1
 1 b
 1
-.5
-1 b</code></pre>
-
-<p>Place the cue before any beat you want to mark. See further details below.</p>
-<pre><code>cue 2
-1
 .5</code></pre>
 
+<p>Place the cue before any beat you want to mark. See further details below.</p>
+<pre><code>1 b
+cue 2
+1
+.5</code></pre>
+<center><img src="images/score-tutorial-10.png" width="238" height="64"></center>
+
 <h4>PICKUP BAR</h4>
-<p>In a performance you can't start the click track without warning &ndash; with the "pickup x" comand it is possible to repeat the 1st bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.<br>
+<p>In a performance you can't start the click track without warning &ndash; with the "pickup x" comand it is possible to repeat the first bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.<br>
 You can either include this command in the score file (anywhere in the score but I suggest you to leave it on top) &ndash; or change it anytime in the patch itself. To have 1 pickup bar write "pickup 1".<br>
 As pickup bars aren't exactly repetitions and you must know exactly when the piece is going to start the bar numbers in pickup bars work downwards until they get to 1 &ndash; which is point where the score begins. In case you have 1 pickup bar you'll and your chosen output has voice included you'll hear bar "2 [beats] 1". If you have 2 pickup bars then "3 [beats] 2 [beats] 1".</p>
 
 <h4>OTHER FIRST BAR NUMBER</h4>
-<p>With the comand "first x" you can define the number of the first bar to be played &ndash; in case your click track doesn't begin at bar 1. If you want to rehearse with another first number for now you'll have to use the bar numbers as if they would start from 1.</p>
+<p>With the comand "first x" you can define the number of the first bar to be played &ndash; in case your click track doesn't begin at bar 1.</p>
 
 <h4>BEAT COUNTING DIRECTION</h4>
+(Settings window)
 <p>With the command "direction up" or "direction down" you can define if the beats inside a bar are counted upwards or downwards. If no command is used the standard value is "up". This can be set anytime in the patch using the button "beat.dir".</p>
 
 <h4>BAR FILTER</h4>
-<p>Use the buttons under "Bar.Flt" to define how many bars sound the spoken: all / every 5 bars / every 10 bars. This can be helpful in very dense tracks.<br>
+(Settings window)
+<p>Use the buttons under "Bar Filter" to define how many bars are spoken: all / every 5 bars / every 10 bars. This can be helpful in very dense tracks.<br>
 You can also define the setting in your score using the command "bar-filt x" and the number 0 / 1 / 2 for the settings mentioned above:
 <pre><code>bar-filt 0</code></pre>
 </p>
@@ -313,7 +324,7 @@ You can also define the setting in your score using the command "bar-filt x" and
 <h4>CUES</h4>
 <p>You can prepare your own audio cues to be added to the click track. These must follow the following conventions:<br>
 <ul>
-<li>store them in a folder named "cues" in the same place as the score file &ndash; see the examples folder.</li>
+<li>store them in the same folder as the score file &ndash; see the examples folder.</li>
 <li>format them as mono / wav / 16b / 44.1KHz</li>
 <li>name them as whole numbers starting from 1: 1.wav / 2.wav / 3.wav / etc.</li>
 <li>use the same name to add them to the score: "cue 1" / "cue 2" / "cue 3" / etc.</li>
@@ -322,7 +333,7 @@ As long as all previous conditions are met you can use any audio content in your
 </p>
 
 <h4>DEFINITION OF PLAYBACK PARAMETERS</h4>
-<p>You can adjust the playback parameters (click format &ndash; language &ndash; recording format) anytime while working with the patch. But you can also adjust them in the score file. Then you don't need to always reset your patch when you load a new score (assuming each score has a different setting). To set a parameter you just write the command "par [parameters]" anywhere in the score. But like with the pickup command I advise you to put these general remarks in the beginning. Note: if you write down more than one command for the same parameter then the last command is the one to be valid.<br>
+<p>You can adjust the playback parameters click format and language anytime while working with the patch. But you can also adjust them in the score file. Then you don't need to always reset your patch when you load a new score (assuming each score has a different setting). To set a parameter you just write the command "par [parameters]" anywhere in the score. But like with the pickup command I advise you to put these general remarks in the beginning. Note: if you write down more than one command for the same parameter then the last command is the one to be valid.<br>
 The available parameters are:<br>
 click format &ndash; click / voice + click  =  cl clst<br>
 language &ndash; english / german / spanish /portuguese  =  english deutsch espanol portugues<br>
@@ -335,32 +346,38 @@ For example to have a click track performed with clicks you write</p>
 
 <h3>GUI CONTROL</h3>
 The Click Tracker's GUI offers the following possibilities (keyboard shortcuts are between [ ] ): <br>
-<strong>Open score [o] / reload score [l]</strong> &ndash; open a score file or reload one (in case file was edited)<br>
-<strong>Play / Stop [space]</strong> &ndash; self-explanatory<br>
-<strong>Resume playing [p]</strong> &ndash; plays from the beginning of the bar where playback stopped the last time<br>
-<strong>Set output file [f]</strong> &ndash; Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination .wav will be added by the program.<br>
-<strong>Play + record [r]</strong> &ndash; Play the score and record it at the same time. The file is also the recording of the performance so you must let the score play the whole piece (or stop it).<br>
+<strong>Play / Stop [Space]</strong> &ndash; Self-explanatory.<br>
+<strong>Resume playing [p]</strong> &ndash; Plays from the beginning of the bar where playback stopped the last time.<br>
+<strong>Open score / reload score</strong> &ndash; Open a score file or reload one (in case the file was edited).<br>
+<strong>Export WAV</strong> &ndash; Exports an audio file of the score (without a playback).<br>
+<strong>Export MIDI</strong> &ndash; Exports a midi file of the score (see <a href="#midiexport">below</a href> for more details).<br>
+<strong>Record</strong> &ndash; Play the score and record it at the same time.<br>
+<strong>Set file</strong> &ndash; Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The termination .wav will be added by the program.<br>
 <br>
-<strong>Audio</strong> &ndash; audio output settings<br>
-<strong>Language</strong> &ndash; language setting<br>
-<strong>Output</strong> &ndash; audio channel settings window<br>
-<strong>OSC</strong> &ndash; OSC settings window<br>
-<strong>Instructions</strong> &ndash; Click on this for a short reference<br>
+<strong>Audio</strong> &ndash; Choose click track audio.<br>
+<strong>Language</strong> &ndash; Choose language.<br>
+<strong>Instructions</strong> &ndash; Click on this for a short reference.<br>
 <br>
-<strong>Bar / Beat / Dur / Rep</strong> &ndash; Bar + Beat count / Duration of current beat / Repetition indication<br>
-<strong>Bars (total)</strong> &ndash; How many bars are in the score<br>
+<strong>Bar / Beat / Dur / Rep</strong> &ndash; Bar and Beat count / Duration of current beat / Repetition indication.<br>
+<strong>Bars</strong> &ndash; How many bars are in the score.<br>
 <strong>Duration</strong> &ndash; Duration of the excerpt you just played.<br>
+<strong>Cue</strong> &ndash; Active cue.<br>
+<strong>Track Volume</strong> &ndash; Volume as defined in the score.<br>
 <br>
-<strong>Go to bar</strong> &ndash; Start directly from a bar<br>
-<strong>Pickup bar</strong> &ndash; How many pickup bars you want to have?<br>
-<strong>Tempo scaler</strong> &ndash; if a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown.<br>
-<strong>1st beat</strong> &ndash; Mute other beats besides the 1st one in each bar.<br>
-<strong>Loop</strong> &ndash; loops from current bar to the bar indicated in "Loop to"<br>
-<strong>Track Volume</strong> &ndash; Volume as defined in the score<br>
-<strong>Output volume meter + volume level</strong> &ndash; self explanatory<br>
-<strong>Beat.dir</strong> &ndash; changes beat counting direction up or downwards<br>
-<strong>Display</strong> &ndash; shows large window with beat + bar numbers</p>
-<strong>Keyboard Control</strong> &ndash; It is possible to control the patch using the keyboard shortcuts (these were just indicated). You can turn this on/off with the Escape key. If the box is crossed keyboard control is on.<br>
+<strong>Go to Bar</strong> &ndash; Start directly from a bar.<br>
+<strong>Pickup Bar</strong> &ndash; How many pickup bars you want to have?<br>
+<strong>Tempo Scaler</strong> &ndash; If a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown.<br>
+<strong>Loop</strong> &ndash; Loops from current bar to the bar indicated in "Loop to".<br>
+<strong>Output volume meter</strong> and <strong>Volume level</strong> &ndash; Self explanatory.<br>
+<br>
+In the <strong>Settings</strong> window:<br>
+<strong>Bar Filter</strong> &ndash; How many bars are spoken.<br>
+<strong>First Beat</strong> &ndash; Mute other beats besides the first one in each bar.<br>
+<strong>Beat Direction</strong> &ndash; Changes beat counting direction up or downwards<br>
+<strong>Display</strong> &ndash; Shows large window with beat and bar numbers.</p>
+<strong>Keyboard Control</strong> &ndash; Turn keyboard control on/off.<br>
+<strong>Output Channels</strong> &ndash; Select the output channels.<br>
+<strong>OSC</strong> &ndash; Settings for OSC communication.<br>
 
 <h3>COMMAND LIST</h3>
 <strong>t $1</strong> &ndash; Tempo in MM &ndash; Eg. t 70<br>
@@ -372,9 +389,9 @@ The Click Tracker's GUI offers the following possibilities (keyboard shortcuts a
 <strong>vol $1</strong> &ndash; volume between 0 and 10 &ndash; Eg. vol 8<br>
 <strong>rep $1 $2</strong> &ndash; repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat &ndash; Eg. rep 4 3<br>
 <strong>cue $1</strong> &ndash; play audio cue $1.wav &ndash; Eg. cue 1<br>
-<strong>pickup $1</strong> &ndash; pickup bar repeats the 1st bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; Eg. pickup 2<br>
+<strong>pickup $1</strong> &ndash; pickup bar repeats the first bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; Eg. pickup 2<br>
 <strong>first $1</strong> &ndash; number of the first bar of the score &ndash; Eg. first 35<br>
-<strong>par&ensp;cl/clst/st/stbb&ensp;english/deutsch/espanol/portugues</strong> &ndash; playback parameters<br>
+<strong>par&ensp;cl/clst&ensp;english/deutsch/espanol/portugues</strong> &ndash; playback parameters<br>
 <strong>direction up/down</strong> &ndash; changes beat counting direction up or downwards. Default is upwards.<br>
 <strong>audiooutput $1 $2 ...</strong> &ndash; set output channels from 1 to 32<br>
 <strong>osc port $1</strong> &ndash; set receiving port<br>
@@ -382,15 +399,27 @@ The Click Tracker's GUI offers the following possibilities (keyboard shortcuts a
 <strong>osc sendpo $1</strong> &ndash; set send port<br>
 
 <h3>KEYBOARD SHORTCUTS</h3>
-<strong>o</strong> &ndash; open score<br>
-<strong>l</strong> &ndash; reload score<br>
 <strong>space</strong> &ndash; play/stop<br>
 <strong>p</strong> &ndash; play from last active bar<br>
-<strong>e</strong> &ndash; export audio file<br>
-<strong>f</strong> &ndash; set output file for recording<br>
-<strong>r</strong> &ndash; play + record<br>
 <strong>Esc</strong> &ndash; turn keyboard control on/off</p>
 See the <a href="#afeature">Advanced Features</a> section for details on other features.
+
+
+<h2>
+<a id="midiexport" class="anchor" href="#midiexport" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI Export</h2>
+<p>A MIDI file can be exported. The file is formated in this way:
+<ul>
+<li>Pitches 72 and 60 (C5 and C4) are given for the first and other beats in the bar.</li>
+<li>A tag is added to each bar with the current time, repetition indicator ("bar number"."repetition number"), and the text "bar X".</li>
+</ul>
+</p>
+<p>There are certain limitations:
+<ul>
+<li>bars with uncommon time signature denominators can't be converted for now (e.g. 4/6, etc.)</li>
+<li>bars with beats whose duration doesn't fit a rational time signature won't be converted (e.g. a duration of 1:3)</li>
+</ul>
+In case a file can't be converted, the midi button will turn momentarily red, and the message "Not possible to export score - there are irregular time signatures." will appear in the Pd console.
+</p>
 
 
 <h2>
@@ -398,9 +427,9 @@ See the <a href="#afeature">Advanced Features</a> section for details on other f
 <p>Here are the current list of programmed features and features to program. If any of these interest you, you can <a href="#development">commission</a> them &ndash; or any other suggestions you might have.</p>
 <h4>Programmed features</h4>
 <!-- images 50% size -->
-<center><img src="images/features-prog.png" width="368" height="930"></center>
+<center><img src="images/features-prog.png" width="320" height="840"></center>
 <h4>Features to program</h4>
-<center><img src="images/features-unprog.png" width="370" height="633"></center>
+<center><img src="images/features-unprog.png" width="287" height="482"></center>
 
 
 <h2>
@@ -408,7 +437,7 @@ See the <a href="#afeature">Advanced Features</a> section for details on other f
 These features are designed for Pure Data programmers. You can find an example patch with the following features in <strong>examples/tutorial-subpatch osc.pd</strong>.
 
 <h3>Setting channel output</h3>
-<p>The audio output is set by default to channels 1 and 2. To change this setting use the command "audiooutput $1 $2 ..." or edit the output window. The parameters are the output channels from 1 to 32 - as many as necessary.</p>
+<p>The output channels are set by default to 1 and 2. To change this setting use the command "audiooutput $1 $2 ..." or the Output Channels in the Settings window. The parameters are the output channels from 1 to 32 - as many as necessary.</p>
 
 <h3>Click Tracker as subpatch</h3>
 <p>The Click Tracker can be used as a subpatch of another Pure Data patch - it has one inlet for control messages and two outlets for sound and messages.<br>
@@ -437,11 +466,11 @@ You can setup the OSC parameters in your score. For that, use the following comm
 <h4>Outoing variables</h4>
 <center><img src="images/OSC-out.png" width="402" height="161"></center>
 <h4>Incoming variables</h4>
-<center><img src="images/OSC-in.png" width="402" height="404"></center>
+<center><img src="images/OSC-in.png" width="402" height="422"></center>
 
 
 <p>For more informations/requests <a href="mailto:jmmmpais@gmail.com?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais  25.10.2019</strong></p>
+<p><strong>&copy; João Pais  13.06.2019</strong></p>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->

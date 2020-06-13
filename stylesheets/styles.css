@@ -151,8 +151,8 @@ img {
   margin: 0 auto;
   max-width: 650px;
   padding: 5px;
-  margin: 10px 0 32px 0;
-  border: 1px solid #ccc;
+  margin: 0px 0 0px 0;
+  border: none;
 }
 
 p img {
@@ -179,7 +179,7 @@ pre {
   border:1px solid #D7D8C8;
   overflow: auto;
   overflow-y: hidden;
-	margin-bottom: 32px;
+	margin-bottom: 12px;
 }
 
 
