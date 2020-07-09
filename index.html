@@ -18,7 +18,7 @@
     <div class="wrapper">
       <header>
         <h1 class="header">Click Tracker</h1>
-        <p class="header">Click Tracker is a click track designer, made for composers, instrumentalists and conductors working with modern music.</p>
+        <p class="header">Click Tracker is a click track designer or programmable metronome, made for composers, instrumentalists and conductors working with modern music.</p>
         <ul>
           <a class="buttons" href="#donations">Price/Donations</a><br>
           <a class="buttons" href="#testimonials">Users/Testimonials</a><br>
@@ -120,7 +120,7 @@ If you want to be informed of new versions, please <a href="mailto:clicktracker@
 <p><strong>1 &ndash; Install and test Pure Data</strong><br>
 The software runs with Pure Data (Pd for short), which you must install first. Pure Data is a free software for live electronics. Follow these steps to install and test the software:<br>
 <ul>
-<li>download the <strong>64 bit release</strong> of <a href="http://puredata.info/downloads/pure-data" target="_blank">Pure Data</a>. (Do not install the 32 bit version)</li>
+<li>download the <strong>64 bit release</strong> of <a href="http://puredata.info/downloads/pure-data" target="_blank">Pure Data</a>.</li>
 <li>install the program and start it, the window “Pd” will appear</li>
 <li>go to the menu Media -> "Test Audio and MIDI"</li>
 <li>on the left side under "TEST TONES", try clicking on the values “80” or “60” (volume values in decibels). You should hear a sine tone at 440 Hz (A).</li>
@@ -408,15 +408,15 @@ See the <a href="#afeature">Advanced Features</a> section for details on other f
 
 <h2>
 <a id="midiexport" class="anchor" href="#midiexport" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI Export</h2>
-<p>A MIDI file can be exported. The file is formated in this way:
+<p>Exported MIDI files are formated in this way:
 <ul>
-<li>Pitches 72 and 60 (C5 and C4) are given for the first and other beats in the bar.</li>
+<li>Pitches 72 and 60 (C5 and C4) play the first and other beats in the bar.</li>
 <li>A tag is added to each bar with the current time, repetition indicator ("bar number"."repetition number"), and the text "bar X".</li>
 </ul>
 </p>
 <p>There are certain limitations:
 <ul>
-<li>bars with uncommon time signature denominators can't be converted for now (e.g. 4/6, etc.)</li>
+<li>bars with uncommon time signature denominators can't be converted yet (e.g. 4/6, etc.)</li>
 <li>bars with beats whose duration doesn't fit a rational time signature won't be converted (e.g. a duration of 1:3)</li>
 </ul>
 In case a file can't be converted, the midi button will turn momentarily red, and the message "Not possible to export score - there are irregular time signatures." will appear in the Pd console.
