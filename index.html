@@ -42,7 +42,9 @@
 <center><img src="images/click-tracker.png"></center>
 <p>This software runs in Windows, macOS and Linux under the open source program Pure Data, and can be used either by conductors in concert, by musicians for practice purposes, or by composers while composing.</p>
 <p>To prepare a score, just input the values in a plain text file format (.txt) according to the syntax explained in the tutorial online, or sent with the program.</p>
-
+<p></p>
+<p>The <strong>Click Tracker App</strong> is now avalaible - check the <a href="https://bit.ly/click-tracker-mob" target="_blank">app website</a> for it.
+</p>
 
 <h2>
 <a id="donations" class="anchor" href="#donations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Price / Donations</h2>
@@ -165,19 +167,22 @@ A regular bar can be added with the command x/y &ndash; like a normal bar. For e
 5/8.5</code></pre>
 <center><img src="images/score-tutorial-2.png" width="399" height="88"></center>
 
+<h4>COMPOSITE TIME SIGNATURES</h4>
+You can add composite time signatures using the syntax x+y/z. You can use as many segments as necessary:
+<pre><code>2+3/8
+2+3+3/8</code></pre>
+<center><img src="images/score-tutorial-2a.png" width="357" height="69"></center>
+Although it's not explicitly exemplified, you can use any of the previous numerators.
+
 <h4>ADDING BEATS</h4>
 To notate events in higher detail, you can define the duration of each beat in one line &ndash; for example 1 for a full beat. There are 2 possible parameters: the beat duration and the letter "b" to mark the beginning of a bar (separated by a space).<br>
-For example here is a 4/4 and 5/4 bars:</p>
+For example here is a 4/4 bar:</p>
 <pre><code>1 b
 1
 1
 1
-1 b
-1
-1
-1
-1</code></pre>
-<center><img src="images/score-tutorial-3.png" width="318" height="68"></center>
+</code></pre>
+<center><img src="images/score-tutorial-3.png" width="150" height="68"></center>
 <p>The same result is attained with both x/y syntax or with discrete events. These two 5/8 bars are written out differently, but sound the same:</p>
 <pre><code>5/8
 .5 b
