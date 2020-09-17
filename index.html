@@ -21,11 +21,11 @@
         <p class="header">Click Tracker is a click track designer or programmable metronome, made for composers, instrumentalists and conductors working with modern music.</p>
         <ul>
           <a class="buttons" href="#donations">Price/Donations</a><br>
+          <a class="buttons" href="#download">Download</a><br>
           <a class="buttons" href="#testimonials">Users/Testimonials</a><br>
           <a class="buttons" href="#development">Development</a><br>
           <!--<a class="buttons" href="#repository">Score repository</a><br>-->
           <a class="buttons" href="#license">License</a><br>
-          <a class="buttons" href="#download">Download/Installation</a><br>
           <a class="buttons" href="#tutorial">Tutorial</a><br>
 		  <a class="buttons" href="#midiexport">Midi Export</a><br>
 		  <a class="buttons" href="#feature">Feature List</a><br>
@@ -39,8 +39,8 @@
 <h1>
 <a id="click-tracker-software" class="anchor" href="http://j.mp/click-tracker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Click Tracker</h1>
 <p><strong>Click Tracker</strong> is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of any score, no matter how complex it is.</p>
-<center><img src="images/click-tracker.png"></center>
-<p>This software runs in Windows, macOS and Linux under the open source program Pure Data, and can be used either by conductors in concert, by musicians for practice purposes, or by composers while composing.</p>
+<center><img src="images/click-tracker-max-win.png"></center>
+<p>This software runs in Windows, macOS and Linux, and can be used either by conductors in concert, by musicians for practice purposes, or by composers while composing.</p>
 <p>To prepare a score, just input the values in a plain text file format (.txt) according to the syntax explained in the tutorial online, or sent with the program.</p>
 <p></p>
 <p>The <strong>Click Tracker App</strong> is now available - check the <a href="https://bit.ly/click-tracker-mob" target="_blank">app website</a> for it.
@@ -65,6 +65,24 @@ An invoice can be written for donations.</p>
 <li>Version 1.8 &ndash; <a href="http://jeffreygavett.com/" target="_blank">Jeff Gavett</a></li>
 </ul>
 
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
+The Click Tracker comes in four flavours:
+<h3>Click Tracker Android App</h3>
+Check the <a href="https://bit.ly/click-tracker-mob" target="_blank">app website</a> or the <a href="https://bit.ly/clicktracker-playstore" target="_blank">Google play store</a> for it.
+
+<h3>Click Tracker Desktop Application</h3>
+<p>Use this version in your computer if you don't want to install any extra software, such as Pure Data or Max/MSP.<br>
+You can download it for <a href="http://bit.ly/ClickTracker2win">Windows</a> or <a href="http://bit.ly/ClickTracker2Apple">Apple.</a></p>
+To run the application, unpack the zip file and execute the file <strong>Click-Tracker</strong> file in the Click-Tracker folder. Don't separate the files inside the folder, or the program won't work correctly.
+
+<h3>Click Tracker Patch for Pure Data</h3>
+Use <a href="http://bit.ly/clicktrackerv2">this version</a> if you want to run the Click Tracker on Pure Data.<br>
+
+<h3>Click Tracker Patch for Max/MSP</h3>
+Use this version if you want to run the Click Tracker on Max/MSP (from version 7) on <a href="http://bit.ly/ClickTracker2MaxWin">Windows</a> or <a href="http://bit.ly/ClickTracker2MaxApple">Apple.</a><br>
+<p>If you download any of the patch versions, see the <a href="#afeature">Advanced Features</a> section below on how to integrate it into your patches. The patch runs at a sampling rate of 44100Hz.</p>
 
 <h2>
 <a id="testimonials" class="anchor" href="#testimonials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Users and testimonials</h2>
@@ -114,8 +132,7 @@ Click Tracker by João Pais is licensed under a Creative Commons Attribution-Non
 If you wish to use this software in any way not allowed by this license, or to do commercial work, please <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20licensing">contact the author</a>.<br>
 
 
-<h2>
-<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download and installation</h2>
+<!--
 <p><a href="http://bit.ly/clicktracker186">CLICK HERE</a> to download version 1.86.<br>
 If you want to be informed of new versions, please <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20mailing%20list">send me your contact</a>.</p>
 <h4>How to install and run the Click Tracker patch</h4>
@@ -142,7 +159,7 @@ Once you have Pd installed and running, you can open the zip file with the patch
 And that's it. If you click on the Instructions button you'll find a short explanation of the patch. But to get more detailed informations, and to know how to start a new score, you should open <strong>_score-tutorial.txt</strong> with a text editor. This file isn't only a score, but also a full tutorial explaining how the program works.<br>
 Alternatively, look up the same tutorial <a href="#tutorial">below</a>.<br>
 In the same folder you can find other score excerpts by Stravinsky, Boulez, Stockhausen, Lang and Nunes.</p>
-
+-->
 
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
@@ -440,7 +457,7 @@ In case a file can't be converted, the midi button will turn momentarily red, an
 
 <h2>
 <a id="afeature" class="anchor" href="#afeature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Advanced Features</h2>
-These features are designed for Pure Data programmers. You can find an example patch with the following features in <strong>examples/tutorial-subpatch osc.pd</strong>.
+These features are designed for Pure Data and Max/MSP programmers. You can find an example patch with the following features in <strong>examples/tutorial-subpatch osc.pd</strong> or in <strong>Click-Tracker.maxhelp</strong>.
 
 <h3>Setting channel output</h3>
 <p>The output channels are set by default to 1 and 2. To change this setting use the command "audiooutput $1 $2 ..." or the Output Channels in the Settings window. The parameters are the output channels from 1 to 32 - as many as necessary.</p>
@@ -476,7 +493,7 @@ You can setup the OSC parameters in your score. For that, use the following comm
 
 
 <p>For more informations/requests <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais  04.07.2020</strong></p>
+<p><strong>&copy; João Pais  16.09.2020</strong></p>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
