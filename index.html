@@ -172,7 +172,7 @@ In the same folder you can find other score excerpts by Stravinsky, Boulez, Stoc
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
 <p>This tutorial shows how to prepare a score for the Click Tracker patch, including all its features.<br>
-The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this. I suggest using a programme such as <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> for Apple to edit your track files.<br>
+The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this.<br>I suggest using a programme such as <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> for Apple to edit your track files. See <a href="#syntax-high">below</a> for other resources for these programs.<br>
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program &ndash; basically you must write down the metrical structure of the score.<br>
 The score below will be coded in the tutorial. You can find it under <strong>examples/_score-tutorial.txt</strong>.</p>
 <center><img src="images/score-tutorial.png"></center>
@@ -500,9 +500,20 @@ You can setup the OSC parameters in your score. For that, use the following comm
 <h4>Incoming variables</h4>
 <center><img src="images/OSC-in.png" width="402" height="422"></center>
 
+<h3><a id="syntax-high" class="anchor" href="#syntax-high" aria-hidden="true"></a>Inputting a score with syntax highlighting</h3>
+If you use <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows, you can install an extension to allow for syntax highligting, making your work even easier. Comments will be colored green, commands in blue, and the "b" at the start of a bar in red:
+<center><img src="images/syntax-high-w.png" width="294" height="230"></center>
+<p>For that, follow these steps:
+<ul>
+<li>Download the <a href="images/click-tracker.udl">click-tracker.udl</a> file.</li>
+<li>In Notepad++ go to Language/User Defined Language/Open User Defined Language Folder.</li>
+<li>Move the click-tracker.udl file to that folder.</li>
+<li>Restart Notepad++. When you open a Click Tracker score, go to Language/Click Tracker to activate the highlighting.</li>
+</ul>
+</p>
 
 <p>For more informations/requests <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais 20.04.2021</strong></p>
+<p><strong>&copy; João Pais 21.04.2021</strong></p>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
