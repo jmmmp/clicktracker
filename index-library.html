@@ -7,19 +7,35 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-74441074-1');
 </script>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Click Tracker Library by João Pais</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta name="google-site-verification" content="nvogWyy4SCoEDE-o3wctujmBuE4ztZfQgtxq4iU6opE" />
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th {
+  cursor: pointer;
+}
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
   </head>
+
   <body>
     <div class="wrapper">
       <header>
@@ -27,13 +43,13 @@
         <p class="header">This page lists the public files for the Click Tracker.</p>
         <ul>
           <a class="buttons" href="#tracklist">Track List</a><br>
-          <a class="buttons" href="#testimonials">Users/Testimonials</a><br>
+          <a class="buttons" href="http://jmmmp.github.io/clicktracker/">Click Tracker Page</a><br>
           <!-- <a class="buttons" href="#development">Development</a><br> -->
           <!--<a class="buttons" href="#repository">Score repository</a><br>-->
 		  <!-- <a class="buttons" href="#midiexport">Midi Export</a><br> -->
-		  <a class="buttons" href="#feature">Feature List</a><br>
+		  <!-- <a class="buttons" href="#feature">Feature List</a><br> -->
 		  <!-- <a class="buttons" href="#afeature">Advanced Features</a><br> -->
-          <a class="buttons" href="http://j.mp/clicktrackerfb" target="_blank">Facebook</a><br>
+          <!-- <a class="buttons" href="http://j.mp/clicktrackerfb" target="_blank">Facebook</a><br> -->
         </ul>
         <p class="header">Software by <a class="header name" href="http://j.mp/jmmmpfb">João Pais</a></p>
       </header>
@@ -49,10 +65,124 @@
 
 <h2>
 <a id="tracklist" class="anchor" href="#tracklist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Track List</h2>
-<h3>How to send a click track file to your mobile device</h3>
-<h4>Steen-Andersen, Simon (1977)</h4>
-<p><a href="library/Steen-Andersen_Besides.txt" target="_blank">Besides</a> (2003)</p>
-<p><a href="library/Steen-Andersen - String Quartet Number 1.txt" target="_blank">String quartet Nr. 1</a> (1999)</p>
+<p>Click on a piece name to download the click file, or in a header to sort the table.</p>
+
+<table id="myTable">
+  <tr>
+   <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+    <th onclick="sortTable(0)">Composer</th>
+    <th onclick="sortTable(1)">Work</th>
+    <th onclick="sortTable(2)">Year</th>
+  </tr>
+  <tr>
+    <td>Baltakas, Vykintas</td>
+    <td><a href="library/Baltakas_b(ell tree).txt" target="_blank">b(ell tree)</a></td>
+	<td>2007</td>
+  </tr>
+  <tr>
+    <td>Bauckholt, Carola</td>
+    <td><a href="library/Bauckholt_Oh I see.txt" target="_blank">Oh, I see.</a></td>
+	<td>2016</td>
+  </tr>
+  <tr>
+    <td>Christensen, Christian Winther</td>
+    <td><a href="library/CWC_4hrsongs-1.txt" target="_blank">Four Hyper-Realistic Songs For Quintet - 1st Movement</a></td>
+	<td>2015</td>
+  </tr>
+  <tr>
+    <td>Lang, Bernhard</td>
+    <td><a href="library/lang - differenz-wiederholung 2-1.txt" target="_blank">Differenz-Wiederholung 2 - 1st Movement</a></td>
+	<td>1999</td>
+  </tr>
+  <tr>
+    <td>López López, José Manuel</td>
+    <td><a href="library/López López_Estudio II.txt" target="_blank">Estudios sobre la Modulación Métrica - Estudio II</a></td>
+	<td>2003</td>
+  </tr>
+  <tr>
+    <td>Poppe, Enno</td>
+    <td><a href="library/Poppe_themamit840variationen.txt" target="_blank">Thema mit 840 Variationen</a></td>
+	<td>1997</td>
+  </tr>
+  <tr>
+    <td>Steen-Andersen, Simon</td>
+    <td><a href="library/Steen-Andersen_Besides.txt" target="_blank">Besides</a></td>
+	<td>2003</td>
+  </tr>
+  <tr>
+    <td>Steen-Andersen, Simon</td>
+    <td><a href="library/Steen-Andersen_String Quartet Number 1.txt" target="_blank">String Quartet Nr. 1</a></td>
+	<td>1999</td>
+  </tr>
+  <tr>
+    <td>Steen-Andersen, Simon</td>
+    <td><a href="library/Steen-Andersen_StudyStrInstr3-Vc.txt" target="_blank">Study for String Instrument 3 - Instrument</a></td>
+	<td>2011</td>
+  </tr>
+  <tr>
+    <td>Steen-Andersen, Simon</td>
+    <td><a href="library/Steen-Andersen_StudyStrInstr3-Video.txt" target="_blank">Study for String Instrument 3 - Video</a></td>
+	<td>2011</td>
+  </tr>
+</table>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
 <h3>Operating the app</h3>
 <p>All functions are explained in the app's instructions. The menu on the top left corner allows you to open files and change audio settings.
 
@@ -62,18 +192,8 @@
 <p>Check <a href="http://jmmmp.github.io/clicktracker/index.html#testimonials" target="_blank">this link</a> for reports from some known instrumentalists and composers.</p>
 
 
-<h2>
-<a id="feature" class="anchor" href="#feature" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature list</h2>
-<p>Here are the current list of programmed features and features to program. If any of these interest you, you can <a href="http://jmmmp.github.io/clicktracker/index.html#development">commission</a> them &ndash; or any other suggestions you might have.</p>
-<h4>Programmed features</h4>
-<!-- images 50% size -->
-<center><img src="images/features-mobile.png" width="368" height="706"></center>
-<h4>Features to program</h4>
-<center><img src="images/features-unprog.png" width="368" height="536"></center>
-
-
 <p>For more informations/requests <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20questions">contact me</a>.</p>
-<p><strong>&copy; João Pais 20.04.2021</strong></p>
+<p><strong>&copy; João Pais 29.05.2021</strong></p>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
