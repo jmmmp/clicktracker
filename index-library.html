@@ -19,7 +19,7 @@
 	<meta name="google-site-verification" content="nvogWyy4SCoEDE-o3wctujmBuE4ztZfQgtxq4iU6opE" />
 <style>
 table {
-  border-spacing: 0;
+  border-spacing: 1;
   width: 100%;
   border: 1px solid #ddd;
 }
@@ -42,10 +42,10 @@ tr:nth-child(even) {
         <h1 class="header">Click Tracker Library</h1>
         <p class="header">This page lists the public files for the Click Tracker.</p>
         <ul>
+          <a class="buttons" href="#library">Library</a><br>
           <a class="buttons" href="#tracklist">Track List</a><br>
+          <a class="buttons" href="#contribute">Send your files</a><br>
           <a class="buttons" href="http://jmmmp.github.io/clicktracker/">Click Tracker Page</a><br>
-          <!-- <a class="buttons" href="#development">Development</a><br> -->
-          <!--<a class="buttons" href="#repository">Score repository</a><br>-->
 		  <!-- <a class="buttons" href="#midiexport">Midi Export</a><br> -->
 		  <!-- <a class="buttons" href="#feature">Feature List</a><br> -->
 		  <!-- <a class="buttons" href="#afeature">Advanced Features</a><br> -->
@@ -57,140 +57,113 @@ tr:nth-child(even) {
 <section>
 <h1>
 <a id="click-tracker-software" class="anchor" href="http://j.mp/click-tracker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Click Tracker Library</h1>
-<p><strong>Click Tracker</strong> is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of any score, no matter how complex it is. It can also be used as a programmable metronome.</p>
-<p>The Android version can be purchased at the <a href="https://bit.ly/clicktracker-playstore" target="_blank">Google play store</a>.</p>
-<p>An iOS version will most likely not be available. For Apple hardware, see the desktop version in the <a href="http://jmmmp.github.io/clicktracker/" target="_blank">original website.</a></p>
-<p>The Click Tracker can be used either by conductors in concert, by musicians for practice purposes, or by composers while composing.<br>To prepare a score, just input the values in a plain text file format (.txt) according to the syntax explained in the tutorial online, or sent with the program.</p>
+
+<p>This page hosts the public library of <strong>Click Tracker</strong> files.</p>
+<p><a href="http://jmmmp.github.io/clicktracker/" target="_blank">Click Tracker</a> is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of any score, no matter how complex it is. It can also be used as a programmable metronome. You can find further information in the original website.</p>
+
+<h2>
+<a id="library" class="anchor" href="#library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Library</h2>
+<p>The Click Tracker library is a growing project. Its contents were inputted by individual musicians, and are here provided as is, with no warranties of completeness or correctness.<br>
+The contents are provided in both txt and mp3 formats. For practical reasons, no wav format is stored &ndash; if you wish for that format, you can use the Click Tracker to export it on your own, or <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20questions">contact me</a> for more details.<br>
+The mp3 format is ready to use, but it's advised that you download the txt file and try it out with the Click Tracker. Only then you'll have full access to the software's advantages, such as scale tempi, locate bars, and others. See the <a href="http://jmmmp.github.io/clicktracker/" target="_blank">Click Tracker</a> page for a full list of features.</p>
 
 
 <h2>
 <a id="tracklist" class="anchor" href="#tracklist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Track List</h2>
-<p>Click on a piece name to download the click file, or in a header to sort the table.</p>
+<p>The table is sorted ahphabetically by composer name, then by work name. Click on the link to download a txt or mp3 file.</p>
 
-<table id="myTable">
-  <tr>
-   <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-    <th onclick="sortTable(0)">Composer</th>
-    <th onclick="sortTable(1)">Work</th>
-    <th onclick="sortTable(2)">Year</th>
-  </tr>
-  <tr>
-    <td>Baltakas, Vykintas</td>
-    <td><a href="library/Baltakas_b(ell tree).txt" target="_blank">b(ell tree)</a></td>
-	<td>2007</td>
-  </tr>
-  <tr>
-    <td>Bauckholt, Carola</td>
-    <td><a href="library/Bauckholt_Oh I see.txt" target="_blank">Oh, I see.</a></td>
-	<td>2016</td>
-  </tr>
-  <tr>
-    <td>Christensen, Christian Winther</td>
-    <td><a href="library/CWC_4hrsongs-1.txt" target="_blank">Four Hyper-Realistic Songs For Quintet - 1st Movement</a></td>
-	<td>2015</td>
-  </tr>
-  <tr>
-    <td>Lang, Bernhard</td>
-    <td><a href="library/lang - differenz-wiederholung 2-1.txt" target="_blank">Differenz-Wiederholung 2 - 1st Movement</a></td>
-	<td>1999</td>
-  </tr>
-  <tr>
-    <td>López López, José Manuel</td>
-    <td><a href="library/López López_Estudio II.txt" target="_blank">Estudios sobre la Modulación Métrica - Estudio II</a></td>
-	<td>2003</td>
-  </tr>
-  <tr>
-    <td>Poppe, Enno</td>
-    <td><a href="library/Poppe_themamit840variationen.txt" target="_blank">Thema mit 840 Variationen</a></td>
-	<td>1997</td>
-  </tr>
-  <tr>
-    <td>Steen-Andersen, Simon</td>
-    <td><a href="library/Steen-Andersen_Besides.txt" target="_blank">Besides</a></td>
-	<td>2003</td>
-  </tr>
-  <tr>
-    <td>Steen-Andersen, Simon</td>
-    <td><a href="library/Steen-Andersen_String Quartet Number 1.txt" target="_blank">String Quartet Nr. 1</a></td>
-	<td>1999</td>
-  </tr>
-  <tr>
-    <td>Steen-Andersen, Simon</td>
-    <td><a href="library/Steen-Andersen_StudyStrInstr3-Vc.txt" target="_blank">Study for String Instrument 3 - Instrument</a></td>
-	<td>2011</td>
-  </tr>
-  <tr>
-    <td>Steen-Andersen, Simon</td>
-    <td><a href="library/Steen-Andersen_StudyStrInstr3-Video.txt" target="_blank">Study for String Instrument 3 - Video</a></td>
-	<td>2011</td>
-  </tr>
-</table>
 
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
-
-<h3>Operating the app</h3>
-<p>All functions are explained in the app's instructions. The menu on the top left corner allows you to open files and change audio settings.
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Composer</th>
+<th title="Field #2">Work</th>
+<th title="Field #3"></th>
+<th title="Field #4"></th>
+</tr></thead>
+<tbody><tr>
+<td>Baltakas, Vykintas</td>
+<td>b(ell tree)</td>
+<td><a href="library/Baltakas_b(ell tree).txt" target="_blank">txt</a></td>
+<td><a href="library/Baltakas_b(ell tree).mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Bauckholt, Carola</td>
+<td>Oh, I see.</td>
+<td><a href="library/Bauckholt_Oh I see.txt" target="_blank">txt</a></td>
+<td><a href="library/Bauckholt_Oh I see.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Christensen, Christian Winther</td>
+<td>Four Hyper-Realistic Songs For Quintet - 1st Movement</td>
+<td><a href="library/CWC_4hrsongs-1.txt" target="_blank">txt</a></td>
+<td><a href="library/CWC_4hrsongs-1.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Lang, Bernhard</td>
+<td>Differenz-Wiederholung 2 - 1st Movement</td>
+<td><a href="library/lang - differenz-wiederholung 2-1.txt" target="_blank">txt</a></td>
+<td><a href="library/lang - differenz-wiederholung 2-1.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>López López, José Manuel</td>
+<td>Estudios sobre la Modulación Métrica - Estudio II</td>
+<td><a href="library/López López_Estudio II.txt" target="_blank">txt</a></td>
+<td><a href="library/López López_Estudio II.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Poppe, Enno</td>
+<td>Thema mit 840 Variationen</td>
+<td><a href="library/Poppe_themamit840variationen.txt" target="_blank">txt</a></td>
+<td><a href="library/Poppe_themamit840variationen.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Steen-Andersen, Simon</td>
+<td>Besides</td>
+<td><a href="library/Steen-Andersen_Besides.txt" target="_blank">txt</a></td>
+<td><a href="library/Steen-Andersen_Besides.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Steen-Andersen, Simon</td>
+<td>String Quartet Nr. 1</td>
+<td><a href="library/Steen-Andersen_String Quartet Number 1.txt" target="_blank">txt</a></td>
+<td><a href="library/Steen-Andersen_String Quartet Number 1.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Steen-Andersen, Simon</td>
+<td>Study for String Instrument 3 - Instrument</td>
+<td><a href="library/Steen-Andersen_StudyStrInstr3-Vc.txt" target="_blank">txt</a></td>
+<td><a href="library/Steen-Andersen_StudyStrInstr3-Vc.mp3" target="_blank">mp3</a></td>
+</tr>
+<tr>
+<td>Steen-Andersen, Simon</td>
+<td>Study for String Instrument 3 - Video</td>
+<td><a href="library/Steen-Andersen_StudyStrInstr3-Video.txt" target="_blank">txt</a></td>
+<td><a href="library/Steen-Andersen_StudyStrInstr3-Video.mp3" target="_blank">mp3</a></td>
+</tr>
+</tbody></table>
 
 
 <h2>
-<a id="testimonials" class="anchor" href="#testimonials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Users and testimonials</h2>
-<p>Check <a href="http://jmmmp.github.io/clicktracker/index.html#testimonials" target="_blank">this link</a> for reports from some known instrumentalists and composers.</p>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to contribute to this project</h2>
+<p>You can contribute to the Click Tracker project in several ways:</p>
 
+<h3>Support the Click Tracker's development</h3>
+See in the <a href="http://jmmmp.github.io/clicktracker/#donations" target="_blank">Click Tracker</a> page on how to support its development.
+
+<h3>Contribute with track files for the library</h3>
+<p>The further the library grows, more musicians will be able to benefit from it. You can support this by sending me your txt files to be hosted here. If you send me a file, I suggest you follow these conventions:</p>
+
+<h4>File name</h4>
+Name the file "[Composer's last name]_[Work title].txt", such as "Bauckholt_Oh I see.txt". Further details such as movement can be added after a hyphen, such as "Bauckholt_Oh I see-mov1.txt".
+<h4>File content</h4>
+First, check the <a href="http://jmmmp.github.io/clicktracker/#tutorial" target="_blank">tutorial</a> on how to prepare a click track file. When it's clear for you, use the comment format to add the following information:
+<ul>
+<li>Composer's name &ndash; such as "# Carola Bauckholt"</li>
+<li>Work title &ndash; "# Oh I see"</li>
+<li>Eventual movement or other details</li>
+<li>Your name and any other contacts you wish to provide &ndash; "# Inputted by João Pais"</li>
+<li>Always add some comments indicating where bar, system or page numbers are. This will help with eventual debugging.</li>
+</ul>
+See any of the files in the track list for examples.
 
 <p>For more informations/requests <a href="mailto:clicktracker@posteo.org?subject=Click%20Tracker%20questions">contact me</a>.</p>
 <p><strong>&copy; João Pais 29.05.2021</strong></p>
