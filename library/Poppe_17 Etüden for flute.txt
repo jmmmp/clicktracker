@@ -2,9 +2,9 @@
 # 17 Etüden for flute
 # Inputted by Daniel Agi
 
-t 100
-
 pickup 4
+
+t 100
 
 .75 b
 .5
