@@ -1,0 +1,274 @@
+# Stefano Gervasoni
+# Antiterra
+# inputted by João Pais
+
+# There are several undefined tempi in this pieces. They should be set by the performer.
+
+pickup 1
+# Bar 1
+t 60
+7/4
+10/4
+
+4/4
+4/4
+2+2+2+2+1/8
+
+13/4
+t 76
+4/4
+
+4/4
+4/4
+
+# Bar 10
+tc 60 18.75
+4/4
+4/4
+
+4/4
+4/4
+4+4+3/16
+
+6/4
+7/4
+
+2+2+2+2+2+2+2+2+2+2+1/8
+3/8
+2/4
+
+# Bar 20
+2+3/8
+3/4
+2+2+2+1/8
+3/8
+
+4/4
+t 76
+4+5/16
+t 60
+2/4
+4/4
+
+4+4+4+4+3/16
+4/4
+# Bar 30
+5/8
+2+2+2+2+1/8
+
+3/4
+5/4
+7/8
+2+2+2+2+2+1/8
+
+# add desired lento tempo here
+9/4
+t 76
+4/4
+t 60
+2+2+2+2+1/8
+
+4+5/16
+# Bar 40
+4+4+5/16
+
+8+8+3/32
+# add desired lento tempo here
+4/4
+
+4/4
+4/4
+
+8+8+9/32
+t 49
+6/4
+
+t 60
+4/4
+t 48
+4/4
+4/4
+
+# Bar 50
+4/4
+4/4
+
+4/4
+4/4
+
+4/4
+4/4
+2+2+1/8
+
+t 76
+4/4
+5/4
+
+5/4
+# Bar 60
+1/16
+1/4
+1/16
+
+# add desired lento tempo here
+6/4
+t 76
+4/4
+2/4
+
+1/16
+4/4
+1/4
+1/16
+
+# Bar 70
+4/4
+3/4
+
+4/4
+5/4
+
+4/4
+3/4
+1/16
+
+4/4
+3/4
+
+5/4
+# Bar 80
+1/4
+1/16
+# add desired lento tempo here
+6/4
+
+t 76
+4/4
+2/4
+
+4/4
+4/4
+
+1/16
+4/4
+3/4
+
+# Bar 90
+3/4
+# add desired lento tempo here
+1 b
+1
+1
+10
+1 b
+1
+1
+5
+1 b
+1
+1
+5
+1 b
+1
+1
+5
+
+1 b
+1
+1
+5
+1 b
+1
+1
+5
+8/4
+3/4
+# add desired fast tempo here and uncomment ne/4t line
+# tc 60 5.5
+2+2+2+3+2+2/8
+
+# Bar 100
+t 69
+2+2+2+2+3+2+2/8
+tc 60 6.5
+2+2+2+3+2+2/8
+t 60
+2+3+2+3+2/8
+t 76
+# add desired rall here
+2+2+3+2+2+2+2/8
+
+# add desired tempo and rall here
+2+2+3+2+2+2+2/8
+# add desired tempo here
+3+2+2+2+2+2+2/8
+# add desired tempo and rall here
+3+2+2+3+2+2/8
+
+# add desired tempo and accel here
+3+2+2+3/8
+t 60
+# add desired fermata here
+4/4
+# add desired fermata here
+4/4
+
+# Bar 110
+# add desired tempo here
+2+2+2+2+2+2+3/8
+# add desired accel here
+2+2+2+3+2+2+2+2/8
+t 69
+2+2+3+2+3/8
+
+# add desired tempo and rall here
+2+2+2+3+2+2+2/8
+t 60
+# add desired fermata here
+4/4
+# add desired fermata here
+4/4
+
+# add desired tempo and rall here
+2+2+2+3+2+2+2/8
+t 69
+# add desired accel here
+3+2+2+2+2+2/8
+t 60
+# add desired fermata here
+4/4
+
+# add desired fermata here
+4/4
+# Bar 120
+# add desired tempo here
+3+2/8
+t 60
+3/4
+# add desired fermata here
+4/4
+
+# add desired fermata here
+4/4
+# add desired fermata here
+4/4
+# add desired tempo here
+2/4
+# add desired tempo here
+# add desired fermata here
+4/4
+
+2/4
+# add desired tempo here
+3/4
+# add desired tempo here
+4/4
+
+# Bar 130
+t 76
+4/4
+4/4
+
+4/4
+4/4
+3/4
