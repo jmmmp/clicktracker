@@ -45,7 +45,7 @@
 <section>
 <h1>
 <a id="click-tracker-software" class="anchor" href="http://j.mp/click-tracker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Click Tracker</h1>
-<p><strong>Click Tracker</strong> is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of any score, no matter how complex it is. It can also be used as a programmable metronome.</p>
+<p><strong>Click Tracker</strong> is a program designed for composers, conductors and instrumentalists working with modern music. The main goal of the software is to prepare a click track of a score, even when great complexity is involved. It can also be used as a programmable metronome.</p>
 <center><img src="images/click-tracker-max-win.png"></center>
 <p>This software runs in Windows, macOS and Linux, and can be used either by conductors in concert, by musicians for practice purposes, or by composers while composing.</p>
 <p>To prepare a score, just input the values in a plain text file format (.txt) according to the syntax explained in the tutorial online, or sent with the program.</p>
@@ -70,6 +70,7 @@ An invoice can be written for donations.</p>
 <li>Version 1.8 &ndash; <a href="http://jeffreygavett.com/" target="_blank">Jeff Gavett</a></li>
 <li>Version 2.1 &ndash; <a href="http://asamisimasa.com/" target="_blank">Ensemble asamisimasa</a></li>
 <li>Version 2.2 &ndash; <a href="http://www.stefanprins.be/" target="_blank">Stefan Prins</a></li>
+<li>Version 2.3 &ndash; <a href="https://www.quatuorbozzini.ca/" target="_blank">Quatuor Bozzini</a></li>
 </ul>
 
 
@@ -91,7 +92,7 @@ Additionaly, <u>M1 processors aren't supported yet</u> &ndash; you will have to 
 Use <a href="http://bit.ly/ClickTracker2-2">this version</a> if you want to run the Click Tracker on Pure Data (which can be downloaded from <a href="http://msp.ucsd.edu/software.html">here</a>).<br>
 
 <h3>Click Tracker Patch for Max/MSP</h3>
-Use this version if you want to run the Click Tracker on Max/MSP (from version 7) on <a href="http://bit.ly/ClickTracker2-2MaxWin">Windows</a> or <a href="http://bit.ly/ClickTracker2-2MaxApple">Apple</a> (see above for security settings in Apple hardware).<br>
+Use this version if you want to run the Click Tracker on Max/MSP (from version 7) on <a href="http://bit.ly/ClickTracker2-2MaxWin">Windows</a> or <a href="http://bit.ly/ClickTracker2-3MaxApple">Apple</a> (see above for security settings in Apple hardware).<br>
 <p>If you download any of the patch versions, see the <a href="#afeature">Advanced Features</a> section below on how to integrate it into your patches. The patch runs at a sampling rate of 44100Hz.</p>
 
 
@@ -393,6 +394,16 @@ cue 2
 .5</code></pre>
 <center><img src="images/score-tutorial-10.png" width="238" height="64"></center>
 
+<h4>FERMATAS</h4>
+<p>Fermatas can be added with the letter "f" after a single beat, separated by a space:</p>
+<pre><code>1 b f
+1
+1 f
+1</code></pre>
+<center><img src="images/score-tutorial-14.png" width="164" height="78"></center>
+<p>If the fermata playback mode is on (check the Settings window), notes with fermatas will hold until the key "f" is pressed. You can use the command "fermata x" to define in your score if fermata mode should be on or off.
+</p>
+
 <h4>PICKUP BAR</h4>
 <p>In a performance you can't start the click track without warning &ndash; with the "pickup x" comand it is possible to repeat the first bar as many times as you need in order for the musicians to prepare themselves. The parameter x defines how many times the bar will be repeated.<br>
 You can either include this command in the score file (anywhere in the score but I suggest you to leave it on top) &ndash; or change it anytime in the patch itself. To have 1 pickup bar write "pickup 1".<br>
@@ -502,18 +513,19 @@ The Click Tracker's GUI offers the following possibilities (keyboard shortcuts a
 <strong>Cue</strong> &ndash; Active cue.<br>
 <strong>Track Volume</strong> &ndash; Volume as defined in the score.<br>
 <br>
-For the next commands in light blue boxes: you can change the values by either click and dragging with the mouse, or click, type the value in the keyboard, and press return.<br>
-<strong>Go to Bar</strong> &ndash; Start directly from a bar. The button near it resets the value.<br>
-<strong>Pickup Bar</strong> &ndash; Setup the number of pickup bars.<br>
-<strong>Tempo Scaler</strong> &ndash; If a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown. The button near it resets the value.<br>
-<strong>Loop</strong> &ndash; Loops from current bar to the bar indicated in "Loop to".<br>
+For the next commands in light blue boxes: you can change the values by either click and dragging with the mouse and by click or pressing the shortcut key and typing the value in the keyboard, then press return.<br>
+<strong>Go to Bar [g]</strong> &ndash; Start directly from a bar. The button near it resets the value [shift+g].<br>
+<strong>Pickup Bar [u]</strong> &ndash; Setup the number of pickup bars. The button near it resets the value [shift+u].<br>
+<strong>Tempo Scaler [t]</strong> &ndash; If a piece is too fast or slow for you to follow you can just change the scaling factor in the interface. Both original and scaled tempi are shown. The button near it resets the value [shift+u].<br>
+<strong>Loop [l]</strong> &ndash; Loops from current bar to the bar indicated in "Loop to". The button near it turns it on/off [shift+l].<br>
 <strong>Output volume meter</strong> and <strong>Volume level</strong> &ndash; Self explanatory.<br>
 <br>
 In the <strong>Settings</strong> window:<br>
 <strong>Bar Filter</strong> &ndash; How many bars are spoken.<br>
 <strong>First Beat</strong> &ndash; Mute other beats besides the first one in each bar.<br>
 <strong>Beat Direction</strong> &ndash; Changes beat counting direction up or downwards<br>
-<strong>Subdivision</strong> &ndash; Turns playback of metric subdivisions on/off.</p>
+<strong>Subdivision</strong> &ndash; Turns playback of metric subdivisions on/off.<br>
+<strong>Fermata</strong> &ndash; Turns playback of fermatas on/off.</p>
 <strong>Display</strong> &ndash; Shows large window with beat and bar numbers.</p>
 <strong>Keyboard Control</strong> &ndash; Turn keyboard control on/off.<br>
 <strong>Output Channels</strong> &ndash; Select the output channels.<br>
@@ -521,22 +533,23 @@ In the <strong>Settings</strong> window:<br>
 
 <h3>COMMAND LIST</h3>
 <p>These commands can be used in your score files:</p>
-<strong>t $1</strong> &ndash; Tempo in MM &ndash; Eg. t 70<br>
+<strong>t $1</strong> &ndash; Tempo in MM &ndash; E.g. t 70<br>
 <strong>[beat duration] b</strong> &ndash; b marks the beginning of a bar<br>
 <strong>[beat duration]</strong> &ndash; duration of a beat<br>
 <strong>[beat duration] s</strong> &ndash; s marks a metric subdivision<br>
-<strong>$1:$2</strong> &ndash; fractional notation for the duration of beats &ndash; Eg. 2:3<br>
-<strong>$1/$2</strong> &ndash; abreviated input of regular bars &ndash; Eg. 3/4<br>
-<strong>$1+$2/$3</strong> &ndash; abreviated input of composite bars &ndash; Eg. 2+3/8<br>
-<strong>$1/$2+$3/$4</strong> &ndash; abreviated input of composite bars with different denominators &ndash; Eg. 2/4+3/8<br>
-<strong>[command] x $1</strong> &ndash; repeated input &ndash; Eg. 3/4 x 3<br>
-<strong>tc $1 $2</strong> &ndash; tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) &ndash; Eg. tc 120 5<br>
-<strong>rep $1 $2</strong> &ndash; repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat &ndash; Eg. rep 4 3<br>
-<strong>cue $1</strong> &ndash; play audio cue $1.wav &ndash; Eg. cue 1<br>
-<strong>first $1</strong> &ndash; number of the first bar of the score &ndash; Eg. first 35<br>
-<strong>pickup $1</strong> &ndash; pickup bar repeats the first bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; Eg. pickup 2<br>
-<strong>subdiv 0/1</strong> &ndash; Turns playback of metric subdivisions on/off. &ndash; Eg. subdiv 1<br>
-<strong>vol $1</strong> &ndash; volume between 0 and 10 &ndash; Eg. vol 8<br>
+<strong>$1:$2</strong> &ndash; fractional notation for the duration of beats &ndash; E.g. 2:3<br>
+<strong>$1/$2</strong> &ndash; abreviated input of regular bars &ndash; E.g. 3/4<br>
+<strong>$1+$2/$3</strong> &ndash; abreviated input of composite bars &ndash; E.g. 2+3/8<br>
+<strong>$1/$2 + $3/$4</strong> &ndash; abreviated input of composite bars with different denominators &ndash; E.g. 2/4 + 3/8<br>
+<strong>[command] x $1</strong> &ndash; repeated input &ndash; E.g. 3/4 x 3<br>
+<strong>tc $1 $2</strong> &ndash; tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) &ndash; E.g. tc 120 5<br>
+<strong>rep $1 $2</strong> &ndash; repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat &ndash; E.g. rep 4 3<br>
+<strong>cue $1</strong> &ndash; play audio cue $1.wav &ndash; E.g. cue 1<br>
+<strong>first $1</strong> &ndash; number of the first bar of the score &ndash; E.g. first 35<br>
+<strong>fermata 0/1</strong> &ndash; Turns fermata playback on/off &ndash; E.g. fermata 1<br>
+<strong>pickup $1</strong> &ndash; pickup bar repeats the first bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; E.g. pickup 2<br>
+<strong>subdiv 0/1</strong> &ndash; Turns playback of metric subdivisions on/off. &ndash; E.g. subdiv 1<br>
+<strong>vol $1</strong> &ndash; volume between 0 and 10 &ndash; E.g. vol 8<br>
 <strong>par&ensp;cl/clst&ensp;english/deutsch/espanol/portugues</strong> &ndash; playback parameters<br>
 <strong>direction up/down</strong> &ndash; changes beat counting direction up or downwards. Default is upwards.<br>
 <strong>audiooutput $1 $2 ...</strong> &ndash; set output channels from 1 to 32<br>
@@ -545,11 +558,20 @@ In the <strong>Settings</strong> window:<br>
 <strong>osc sendpo $1</strong> &ndash; set send port<br>
 
 <h3>KEYBOARD SHORTCUTS</h3>
-<strong>space</strong> &ndash; play/stop<br>
+<p><strong>space</strong> &ndash; play/stop<br>
 <strong>p</strong> &ndash; play from last active bar<br>
 <strong>Esc</strong> &ndash; turn keyboard control on/off</p>
-See the <a href="#afeature">Advanced Features</a> section for details on other features.
 
+<p><strong>g</strong> &ndash; select Go to Bar for input<br>
+<strong>shift+g</strong> &ndash; reset Go to Bar<br>
+<strong>u</strong> &ndash; select Pickup Bar for input<br>
+<strong>shift+u</strong> &ndash; reset Pickup Bar<br>
+<strong>t</strong> &ndash; select Tempo Scaler for input<br>
+<strong>shift+t</strong> &ndash; reset Tempo Scaler<br>
+<strong>l</strong> &ndash; select Loop to for input<br>
+<strong>shift+l</strong> &ndash; turn Loop to on/off</p>
+
+See the <a href="#afeature">Advanced Features</a> section for details on other features.
 
 <h2>
 <a id="midiexport" class="anchor" href="#midiexport" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI Export</h2>
@@ -615,7 +637,7 @@ You can setup the OSC parameters in your score. For that, use the following comm
  -->
  
 <h3><a id="syntax-high" class="anchor" href="#syntax-high" aria-hidden="true"></a>Inputting a score with syntax highlighting</h3>
-If you use <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows, you can install an extension to allow for syntax highligting, making your work even easier. Comments will be colored green, commands in blue, and the "b" at the start of a bar in red:
+If you use <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows, you can install an extension to allow for syntax highligting, making your work even easier. Comments will be colored green, commands in blue, and letters after beat durations ("b", "s", "f") in red:
 <center><img src="images/syntax-high-w.png" width="294" height="230"></center>
 <p>For that, follow these steps:
 <ul>
