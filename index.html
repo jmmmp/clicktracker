@@ -34,6 +34,7 @@
           <!--<a class="buttons" href="#repository">Score repository</a><br>-->
           <a class="buttons" href="#license">License</a><br>
           <a class="buttons" href="#tutorial">Tutorial</a><br>
+          <a class="buttons" href="#display">Score Structure Display</a><br>
 		  <a class="buttons" href="#midiexport">Midi Export</a><br>
 		  <a class="buttons" href="#feature">Feature List</a><br>
 		  <a class="buttons" href="#afeature">Advanced Features</a><br>
@@ -70,7 +71,7 @@ An invoice can be written for donations.</p>
 <li>Version 1.8 &ndash; <a href="http://jeffreygavett.com/" target="_blank">Jeff Gavett</a></li>
 <li>Version 2.1 &ndash; <a href="http://asamisimasa.com/" target="_blank">Ensemble asamisimasa</a></li>
 <li>Version 2.2 &ndash; <a href="http://www.stefanprins.be/" target="_blank">Stefan Prins</a></li>
-<li>Version 2.3 &ndash; <a href="https://www.quatuorbozzini.ca/" target="_blank">Quatuor Bozzini</a></li>
+<li>Version 2.4 &ndash; <a href="https://www.quatuorbozzini.ca/" target="_blank">Quatuor Bozzini</a></li>
 </ul>
 
 
@@ -82,17 +83,18 @@ Check the <a href="http://jmmmp.github.io/clicktracker/index-mob.html" target="_
 
 <h3>Click Tracker Desktop Application</h3>
 <p>Use this version in your computer if you don't want to install any extra software, such as Pure Data or Max/MSP.<br>
-You can download it for <a href="https://www.dropbox.com/s/fro9nik0g8p1wlj/Click-Tracker-v2.3-Win.zip?dl=1">Windows</a> or <a href="http://bit.ly/ClickTracker2-3Apple">Apple.</a></p>
-To run the application, unpack the zip file and execute the file <strong>Click-Tracker</strong> file in the Click-Tracker folder. All files and folders must be kept together, or the program won't work correctly.<br>
+You can download it for <a href="https://bit.ly/ClickTracker2-4Win">Windows</a> or <a href="http://bit.ly/ClickTracker2-4Apple">Apple.</a></p>
+To run the application, unpack the zip file and execute the file <strong>Click-Tracker</strong> file in the Click-Tracker folder. To ensure the program works, don't use any spaces or special characters in your path.<br>
 <h4>Warning for Apple users</h4>
 Due to Apple's recent security settings, you'll need to allow the Pure Data and other externals to run on your system, as indicated in <a href="images/Mac-Auth-1.png" target="_blank">this</a>, and <a href="images/Mac-Auth-2.png" target="_blank">this</a> and <a href="images/mac-pd-accept.png" target="_blank">this</a> picture.<br>
 Additionaly, <u>M1 processors aren't supported yet</u> &ndash; you will have to run the program through Rosetta.
 
 <h3>Click Tracker Patch for Pure Data</h3>
-Use <a href="https://bit.ly/ClickTracker2-3">this version</a> if you want to run the Click Tracker on Pure Data (which can be downloaded from <a href="http://msp.ucsd.edu/software.html">here</a>).<br>
+Use <a href="https://bit.ly/ClickTracker2-4">this version</a> if you want to run the Click Tracker on Pure Data (which can be downloaded from <a href="http://msp.ucsd.edu/software.html">here</a>).<br>
+As with the Desktop version, Apple users with M1 processors will have to run Pure Data through Rosetta and allow the necessary security settings.
 
 <h3>Click Tracker Patch for Max/MSP</h3>
-Use this version if you want to run the Click Tracker on Max/MSP (from version 7) on <a href="https://www.dropbox.com/s/qqjv99qugpq85yb/Click-Tracker-v2.3-Max-Win.zip?dl=1">Windows</a> or <a href="https://www.dropbox.com/s/ghahrr9vmoar1ha/Click-Tracker-v2.3-Max-Mac.zip?dl=1">Apple</a> (see above for security settings in Apple hardware).<br>
+Use this version if you want to run the Click Tracker on Max/MSP (from version 7) on <a href="https://bit.ly/ClickTracker2-4MaxWin">Windows</a> or <a href="https://bit.ly/ClickTracker2-4MaxApple">Apple</a> (see above for security settings in Apple hardware).<br>
 <p>If you download any of the patch versions, see the <a href="#afeature">Advanced Features</a> section below on how to integrate it into your patches. The patch runs at a sampling rate of 44100Hz.</p>
 
 
@@ -175,7 +177,7 @@ In the same folder you can find other score excerpts by Stravinsky, Boulez, Stoc
 <h2>
 <a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
 <p>This tutorial shows how to prepare a score for the Click Tracker patch, including all its features.<br>
-The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this.<br>I suggest using a programme such as <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> for Apple to edit your track files. See <a href="#syntax-high">below</a> for other resources for these programs.<br>
+The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this.<br>I suggest using a programme such as <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or <a href="https://en.wikipedia.org/wiki/SimpleText">SimpleText</a> for Apple to edit your track files. See <a href="#syntax-high">below</a> for other resources for these programs.<br>
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program &ndash; basically you must write down the metrical structure of the score.<br>
 The score below comes with the program, you can find it under <strong>examples/_score-tutorial.txt</strong>.</p>
 <center><img src="images/score-tutorial-v5a.png"></center>
@@ -357,12 +359,20 @@ vol 100
 1</code></pre>
 <center><img src="images/score-tutorial-8.png" width="573" height="103"></center>
 
+<h4>BAR NUMBER MUTE</h4>
+<p>If some bars are too fast to hear, the voice saying the numbers can be muted with the command "voice 0", or unmuted with "voice 1". Here is a new irregular bar back at MM60 with both commands, which means the bar number won't be heard:</p>
+<pre><code>t 60
+voice 0
+1 b
+1
+voice 1
+.5</code></pre>
+<center><img src="images/score-tutorial-8a.png" width="131" height="124"></center>
+
 <h4>REPETITIONS</h4>
 <p>Repetitions of the same bar can be used a lot in modern music. In case you want to repeat a fragment just use the command "rep x y" where x is the number of beats you want to repeat and y the number of times. Put this command just before the first beat of the passage to be repeated. Again &ndash; x MUST coincide with the actual sum of beats (you can't use 1 as a value for y). The number of the current repetition will be shown in the screen.<br>
-In case you use the "Go to bar" feature (more about that later) to start in the middle of a repetition sequence it won't work. For a repetition sequence to be correctly performed you must play the first note (since the command is before it).<br>
-Here is a new irregular bar back at MM60:</p>
-<pre><code>t 60
-1 b
+In case you use the "Go to bar" feature (more about that later) to start in the middle of a repetition sequence it won't work. For a repetition sequence to be correctly performed you must play the first note (since the command is before it).</p>
+<pre><code>1 b
 1
 .5</code></pre>
 <p>And now the same bar repeated 3 times:</p>
@@ -378,7 +388,7 @@ rep 2.5 4
 1 b
 1
 .5</code></pre>
-<center><img src="images/score-tutorial-9.png" width="493" height="82"></center>
+<center><img src="images/score-tutorial-9.png" width="474" height="67"></center>
 
 <h4>CUES</h4>
 <p>Cues (see below) can be added using the syntax "cue x" &ndash; where x is the cue number.</p>
@@ -410,45 +420,6 @@ As pickup bars aren't exactly repetitions and you must know exactly when the pie
 
 <h4>OTHER FIRST BAR NUMBER</h4>
 <p>With the comand "first x" you can define the number of the first bar to be played &ndash; in case your click track doesn't begin at bar 1.</p>
-
-<!-- <h4>SCORE STRUCTURE DISPLAY</h4>
-(Settings window)
-<p>In "Score" you can see a time-scaled structural display of the events in the opened file. These are arranged according to the following structure:
-<center><img src="images/score-legend.png" width="424" height="170"></center>
-The display is structured with the following functions:</p>
-<ul>
-<li>Show display window - controls display and show event data (see below)</li>
-<li>Filename - shows filename of opened score</li>
-<li>Tempo - Tempo of event (based on quarter note)</li>
-<li>Bar number</li>
-<li>Bar and beat structure:</li>
-<ul>
-<li>Long, thick lines indicate first beat in bar.</li>
-<li>Smaller lines indicate other beats. If thicker, it indicates a metric subdivision.</li>ADICIONAR SUBDIVISAO MÉTRICA À IMAGEM DA PARTITURA
-<li>Distance between lines indicates duration.</li>
-<li>Beats with fermatas are colored red.</li>
-</ul>
-<li>Repetition - shows repetition number</li>
-<li>Cue sound - shows cue sounds</li>
-<li>Volume</li>
-<li>Duration in seconds</li>
-</ul>
-<p>The <strong>display settings</strong> window can control the display settings of the score, and retrieve information on concrete events.</p>
-<center><img src="images/score-control.png" width="383" height="290"></center>
-<ul>
-<li>Show event info - switches more information on/off</li>
-<li>Show bar numbers - frequency of bar numbers</li>
-<li>Time grid labels - frequency of duration labels</li>
-</ul>
-<h5>Interaction</h5>
-The following interaction is possible:
-<ul>
-<li>By clicking on the graphical display of an event, it's information will be shown in the fields below (only in Pure Data)...</li>
-<li>... and it will also set the "go to bar" field to the bar number.</li>
-<li>xxx</li>
-</ul>
-- display of playback line
- -->
 
 <h4>BEAT COUNTING DIRECTION</h4>
 (Settings window)
@@ -549,6 +520,7 @@ In the <strong>Settings</strong> window:<br>
 <strong>fermata 0/1</strong> &ndash; Turns fermata playback on/off &ndash; E.g. fermata 1<br>
 <strong>pickup $1</strong> &ndash; pickup bar repeats the first bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; E.g. pickup 2<br>
 <strong>subdiv 0/1</strong> &ndash; Turns playback of metric subdivisions on/off. &ndash; E.g. subdiv 1<br>
+<strong>voice 0/1</strong> &ndash; Turns bar number mute on/off &ndash; E.g. voice 1<br>
 <strong>vol $1</strong> &ndash; volume between 0 and 10 &ndash; E.g. vol 8<br>
 <strong>par&ensp;cl/clst&ensp;english/deutsch/espanol/portugues</strong> &ndash; playback parameters<br>
 <strong>direction up/down</strong> &ndash; changes beat counting direction up or downwards. Default is upwards.<br>
@@ -572,6 +544,37 @@ In the <strong>Settings</strong> window:<br>
 <strong>shift+l</strong> &ndash; turn Loop to on/off</p>
 
 See the <a href="#afeature">Advanced Features</a> section for details on other features.
+
+
+<h2><a id="display" class="anchor" href="#display" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Score Structure Display</h2>
+<p>When clicking in the "Score" button you can see a time-scaled display of the events in the current file (this feature will not be available on mobile plattforms). These are arranged according to the following structure:
+<center><img src="images/score-legend.png" width="532" height="210"></center>
+The display is structured with the following functions:</p>
+<ul>
+<li>Score information - Open window to show event data (see below)</li>
+<li>Filename - Filename of opened score</li>
+<li>Tempo - Tempo of event (based on quarter note)</li>
+<li>Bar number</li>
+<li>Bar and beat structure:</li>
+<ul>
+<li>Long, thick lines indicate first beat in bar.</li>
+<li>Smaller lines indicate other beats. If thicker, it indicates a metric subdivision.</li>
+<li>Distance between lines indicates duration, adjusted for length.</li>
+<li>Beats with fermatas are colored red.</li>
+</ul>
+<li>Repetition:</li>
+<ul>
+<li>Shows repetition starting point and number.</li>
+<li>A blue line with no number shows the end of the last repetition.</li>
+</ul>
+<li>Cue sound - shows cue sounds</li>
+<li>Volume</li>
+<li>Duration in seconds</li>
+</ul>
+<p>In the <strong>score information</strong> window you can retrieve information on concrete events.</p>
+<center><img src="images/score-control.png" width="268" height="209"></center>
+<p>When an event is clicked, the information is read in this window, and sets up the Go to Bar field.</p>
+
 
 <h2>
 <a id="midiexport" class="anchor" href="#midiexport" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI Export</h2>
