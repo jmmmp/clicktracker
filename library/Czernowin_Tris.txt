@@ -1,6 +1,6 @@
 # Chaya Czernowin
 # Tris
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Page 2
 t 69

@@ -1,6 +1,6 @@
 # Harrison Birtwistle
 # Carmen Arcadiae Mechanicae Perpetuum
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # There are many free duration bars. They repeat the previous bar and are marked with the te/4t "free bar". You should change them to your wishes.
 

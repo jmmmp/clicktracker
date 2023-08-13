@@ -1,6 +1,6 @@
 # Carola Bauckholt
 # The Port of Thessaloniki
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 72
 # 1

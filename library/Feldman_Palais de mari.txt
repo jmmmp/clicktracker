@@ -1,6 +1,6 @@
 # Morton Feldman
 # Palais de mari
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 65
 3+2/8

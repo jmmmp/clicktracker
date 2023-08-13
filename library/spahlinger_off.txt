@@ -1,6 +1,6 @@
 # mathias spahlinger
 # off (Version 2011)
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Bar 481 has a partial repetition - which isn't possible in the Click Tracker.
 # See the comment in line 1416 of this file regarding post-preparation for the exported wav file.

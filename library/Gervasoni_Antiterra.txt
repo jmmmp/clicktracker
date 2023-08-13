@@ -1,6 +1,6 @@
 # Stefano Gervasoni
 # Antiterra
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # There are several undefined tempi in this pieces. They should be set by the performer.
 

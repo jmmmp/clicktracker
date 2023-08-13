@@ -1,7 +1,7 @@
 # Eliott Carter
 # String Quartet 1
 # 2nd Movement
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Bar 1
 t 135

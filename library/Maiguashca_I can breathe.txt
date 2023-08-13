@@ -1,6 +1,6 @@
 # Mesias Maiguashca
 # I can breathe
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 60
 # 1

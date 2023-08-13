@@ -1,6 +1,6 @@
 # Morton Feldman
 # Piano and String Quartet
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Page 1
 # set tempo as desired

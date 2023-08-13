@@ -1,6 +1,6 @@
 # Karlheinz Stockhausen
 # Mittwoch-Formel
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # tempo is in 4th notes - beats are always in 8th notes
 

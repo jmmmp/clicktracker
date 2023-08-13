@@ -1,7 +1,7 @@
 # José Manuel López López
 # Estudios sobre la Modulación Métrica
 # Estudio II
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Bar 1
 t 75

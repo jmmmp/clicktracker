@@ -1,6 +1,6 @@
 # Gérard Grisey
 # Vortex Temporum I
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Mark 1
 t 130

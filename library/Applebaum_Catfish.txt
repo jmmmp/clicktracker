@@ -1,6 +1,6 @@
 # Marc Applebaum
 # Catfish
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 60
 5/4

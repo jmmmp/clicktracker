@@ -1,6 +1,6 @@
 # Ivan Fedele
 # Corrente
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Bar 1
 t 69

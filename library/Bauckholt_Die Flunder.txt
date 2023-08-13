@@ -1,6 +1,6 @@
 # Carola Bauckholt
 # Die Flunder
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 pickup 2
 t 60

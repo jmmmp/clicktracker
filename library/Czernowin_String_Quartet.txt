@@ -1,6 +1,6 @@
 # Chaya Czernowin
 # String Quartet
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Movement 1
 # Bar 1

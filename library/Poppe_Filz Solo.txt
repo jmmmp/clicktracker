@@ -1,6 +1,6 @@
 # Enno Poppe
 # Filz Solo
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 60
 # 1

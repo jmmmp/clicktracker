@@ -1,6 +1,6 @@
 # Mauro Lanza
 # La coquille de l'escargot
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Bar 1
 t 84

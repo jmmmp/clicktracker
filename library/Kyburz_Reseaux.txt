@@ -1,6 +1,6 @@
 # Hanspeter Kyburz
 # Réseaux
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 81
 # 1

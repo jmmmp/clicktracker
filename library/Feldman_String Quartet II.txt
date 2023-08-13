@@ -1,6 +1,6 @@
 # Morton Feldman
 # String /2uartet II
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Many bars are inputted according to the time signature and not to the music metric. Some performers might prefer to change this.
 

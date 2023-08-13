@@ -1,6 +1,6 @@
 # Johannes Schöllhorn
 # Vor Augen
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 136
 3+2+2/8

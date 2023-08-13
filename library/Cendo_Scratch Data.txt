@@ -1,6 +1,6 @@
 # Raphäel Cendo
 # Scratch Data
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # Page 1
 t 84

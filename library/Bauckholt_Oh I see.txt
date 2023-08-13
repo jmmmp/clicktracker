@@ -1,6 +1,6 @@
 # Carola Bauckholt
 # Oh I see
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # p1
 t 54

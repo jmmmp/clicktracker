@@ -1,6 +1,6 @@
 # Beat Furrer
 # Spur
-# Inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # No fermatas or undefined tempo changes were inputted. If you search for the word "fermata" or "tempo change" you'll find the places that you can edit for your needs.
 

@@ -1,6 +1,6 @@
 # Francesco Filidei
 # Erpice
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 # adjust tempo to your preferred rate
 t 80

@@ -1,7 +1,7 @@
 # Bernhard Lang
 # Differenz-Wiederholung 2
 # 1st movement
-# Input by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 168
 

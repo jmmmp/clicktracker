@@ -1,6 +1,6 @@
 # Francesco Filidei
 # I funerali dell'anarchico Serantini (version for 6 players)
-# inputted by João Pais
+# transcribed by João Pais - http://jmmmp.github.io/clicktracker/
 
 t 60
 60 b
