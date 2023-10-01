@@ -1,7 +1,8 @@
 # Bernhard Gander 
 # SchlechtecharakterstŸcke mov 1
 # Inputted by Niklas Seidl
-t 802/4
+t 80
+2/4
 2/4
 2/4
 2/4
@@ -171,7 +172,9 @@ tc 84 3.75
 1 b
 1
 1
-1 b #bar 80
+
+# bar 80
+1 b 
 1
 1
 1 b
