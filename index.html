@@ -180,7 +180,7 @@ In the same folder you can find other score excerpts by Stravinsky, Boulez, Stoc
 The Click Tracker reads documents in text format (.txt). They must be saved as text-only &ndash; in case you use Word or any other office software you should pay attention to this.<br>I suggest using a programme such as <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or <a href="https://en.wikipedia.org/wiki/SimpleText">SimpleText</a> for Apple to edit your track files. See <a href="#syntax-high">below</a> for other resources for these programs.<br>
 To reproduce a piece with the Click Tracker you must transcribe the score you want to hear to the format readable by this program &ndash; basically you must write down the metrical structure of the score.<br>
 The score below comes with the program, you can find it under <strong>examples/_score-tutorial.txt</strong>.</p>
-<center><img src="images/score-tutorial-v5a.png"></center>
+<center><img src="images/score-tutorial-v6.png"></center>
 
 <h4>ADDING TEMPO / BARS</h4>
 <p>You start the score by writing a tempo with the command "t 60" (with space in between) for MM=60  &ndash;  in case you forget to say which tempo you want the program will assume that the piece is at MM60.<p>
@@ -304,7 +304,7 @@ t 90
 .5
 2
 .666</code></pre>
-<center><img src="images/score-tutorial-7.png" width="429" height="91"></center>
+<center><img src="images/score-tutorial-7.png" width="333" height="86"></center>
 <p>There are no limits to the decimal values you can use.</p>
 
 <h4>TEMPO WITH A DIFFERENT BASE VALUE</h4>
@@ -318,6 +318,7 @@ t 120 8</code></pre>
 <center><img src="images/score-tutorial-7a.png" width="370" height="95"></center>
 <p>Notice that the tempo display indicator will be converted to the quarter note value in both main window and score display.</p>
 
+<!-- 
 <h4>ADDING COMMENTS</h4>
 <p>As you might have noticed by now this file is at the same time the tutorial for the program and also a score that can be performed. The parts with the numbers are the "music" and comments can be made in any place in the file if you put the "# " (a hash and a space) before each comment.<br>
 Very important about the comments: you can't use any commas or semicolons &ndash; it would be misinterpreted by the program!<br>
@@ -333,10 +334,16 @@ Here is an empty space. You can have as many as you want.</p>
 <p>And some more beats</p>
 <pre><code>1
 
-1</code></pre>
+1</code></pre> 
+-->
 
 <h4>GRADUAL TEMPO CHANGES and VOLUME CHANGES</h4>
-<p>To change the tempo suddenly you already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; you can use the command "tc x y" where x is the new tempo and y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts: for example, if it lasts 1+1+0.75 beats, the result is 2.75.<br>
+<p>To change the tempo suddenly you already saw the t command. But to create gradual tempo changes &ndash; accelerandi and ritardandi &ndash; you can use the command "tc x y z":<br>
+<ul>
+<li>x is the new tempo</li>
+<li>y the number of beats necessary to reach it. The beat duration of the tempo change MUST coincide with the sum of the beats it lasts: for example, if it lasts 1+1+0.75 beats, the result is 2.75.</li>
+<li>z is facultative - it indicates de curvature of the tempo change. Values between 0 and 2 should be enough for your use, and if no value is indicated, the default values are 0.5 for ritardandi and 0.8 for accelerandi. See below in <a href="#display">Score Structure Display</a> more details on experimenting with the values.</li>
+</ul>
 The "vol x" command scales the loudness of the click so that it fits with the musical content. Values between 0 and 10 are accepted. The scaling is independent of the main output's volume level. If no value is given the score sets to 10.<br>
 Here is an accelerando with 1 bar duration and one bar in the new tempo. At the same time the volume goes slightly down.</p>
 <pre><code>tc 120 4
@@ -345,20 +352,28 @@ vol 7
 <p>and now we're in the new tempo. The volume goes lower.</p>
 <pre><code>vol 4
 4/4</code></pre>
-<p>And now it slows down to slower as the initial tempo:</p>
+<p>And now it slows down to slower as the initial tempo. The volume goes up slowly until it gets back to the maximum.</p>
 <pre><code>tc 50 4
-4/4</code></pre>
-<p>and now is at MM50. The volume goes up on each beat until it gets back to the maximum.</p>
-<pre><code>vol 5
+vol 5
 1 b
+1
 vol 7
 1
-vol 8
+1
+</code></pre>
+<p>and now is at MM50.</p>
+<pre><code>vol 8
+1 b
 1
 vol 10
+1
 1</code></pre>
-<center><img src="images/score-tutorial-8.png" width="573" height="103"></center>
-<p>You can also use the x:y syntax for the duration of the command.</p>
+<center><img src="images/score-tutorial-tc1.png" width="435" height="99"></center>
+<p>The next four bars use the third argument to change the curve of each tempo change:</p>
+<center><img src="images/score-tutorial-tc2.png" width="469" height="107"></center>
+<p>If you see the score, you will notice that the result is different each time:</p>
+<center><img src="images/score-tutorial-tc3.png" width="386" height="82"></center>
+<p>You can also use the x:y syntax for the duration of the command, as in "tc 60 2:3".</p>
 
 <h4>BAR NUMBER MUTE</h4>
 <p>If some bars are too fast to hear, the voice saying the numbers can be muted with the command "voice 0", or unmuted with "voice 1". Here is a new irregular bar back at MM60 with both commands, which means the bar number won't be heard:</p>
@@ -392,18 +407,18 @@ rep 2.5 4
 <center><img src="images/score-tutorial-9.png" width="474" height="67"></center>
 
 <h4>CUES</h4>
-<p>Cues (see below) can be added using the syntax "cue x" &ndash; where x is the cue number.</p>
-<pre><code>cue 1
+<p>Cues (see below) can be added using the syntax "cue x" &ndash; where x is the filename.</p>
+<pre><code>cue gong1
 1 b
 1
 .5</code></pre>
 
 <p>Place the cue before any beat you want to mark. See further details below.</p>
 <pre><code>1 b
-cue 2
+cue gong 2
 1
 .5</code></pre>
-<center><img src="images/score-tutorial-10.png" width="238" height="64"></center>
+<center><img src="images/score-tutorial-cue.png" width="234" height="63"></center>
 
 <h4>FERMATAS</h4>
 <p>Fermatas can be added with the letter "f" after a single beat, separated by a space:</p>
@@ -447,10 +462,9 @@ Each version of the program has different ways to change the output settings:<br
 <ul>
 <li>store them in the same folder as the score file &ndash; see the examples folder.</li>
 <li>format them as mono / wav / 16b / 44.1KHz</li>
-<li>name them as whole numbers starting from 1: 1.wav / 2.wav / 3.wav / etc.</li>
-<li>use the same name to add them to the score: "cue 1" / "cue 2" / "cue 3" / etc.</li>
+<li>use the same name to add them to the score: "cue gong1" / "cue gong 2" / etc.</li>
 </ul>
-As long as all previous conditions are met you can use any audio content in your cue files. If a cue isn't found you'll see an error message such as "cue1.wav not found".
+As long as all previous conditions are met you can use any audio content in your cue files. If a cue isn't found you'll see an error message such as "gong1.wav not found".
 </p>
 
 <h4>DEFINITION OF PLAYBACK PARAMETERS</h4>
@@ -472,6 +486,7 @@ The Click Tracker's GUI offers the following possibilities (keyboard shortcuts a
 <strong>Open score / reload score</strong> &ndash; Open a score file or reload one (in case the file was edited). In the application or in the Max patch a file can also be dropped over the window.<br>
 <strong>Export WAV</strong> &ndash; Exports an audio file of the score, according to the current playback settings.<br>
 <strong>Export MIDI</strong> &ndash; Exports a midi file of the score (see <a href="#midiexport">below</a href> for more details).<br>
+<strong>Export TXT</strong> &ndash; Exports a txt file of the score, adding "-new" to the filename. Use it if you reshape tempo changes in the score structure display.<br>
 <strong>Export SVG</strong> &ndash; Exports an svg graphic of the score, as seen in the score structure display.<br>
 <!-- <strong>Record</strong> &ndash; Play the score and record it at the same time.<br>
 <strong>Set file</strong> &ndash; Before you record a click track say where it's going to be recorded and with which name. In case you forget this the program will record it with the same name and place as the score file. You only have to write the name of the file. The file extension .wav will be added by the program.<br> -->
@@ -515,9 +530,9 @@ In the <strong>Settings</strong> window:<br>
 <strong>$1+$2/$3</strong> &ndash; abreviated input of composite bars &ndash; E.g. 2+3/8<br>
 <strong>$1/$2 + $3/$4</strong> &ndash; abreviated input of composite bars with different denominators &ndash; E.g. 2/4 + 3/8<br>
 <strong>[command] x $1</strong> &ndash; repeated input &ndash; E.g. 3/4 x 3<br>
-<strong>tc $1 $2</strong> &ndash; tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) &ndash; E.g. tc 120 5<br>
+<strong>tc $1 $2 $3</strong> &ndash; tempo change. $1 = new tempo / $2 = number of beats necessary to reach it (beat duration of the tempo change MUST coincide with the sum of the beats it lasts) / $3 = curvature. &ndash; E.g. tc 120 5 1.2<br>
 <strong>rep $1 $2</strong> &ndash; repetition of a fragment. $1 = number of beats to repeat / $2 = number of times to repeat &ndash; E.g. rep 4 3<br>
-<strong>cue $1</strong> &ndash; play audio cue $1.wav &ndash; E.g. cue 1<br>
+<strong>cue $1</strong> &ndash; play audio cue $1.wav &ndash; E.g. cue gong1<br>
 <strong>first $1</strong> &ndash; number of the first bar of the score &ndash; E.g. first 35<br>
 <strong>fermata 0/1</strong> &ndash; Turns fermata playback on/off &ndash; E.g. fermata 1<br>
 <strong>pickup $1</strong> &ndash; pickup bar repeats the first bar $1 times (bar numbers decrease from $1+1 to 1) &ndash; E.g. pickup 2<br>
@@ -550,7 +565,7 @@ See the <a href="#afeature">Advanced Features</a> section for details on other f
 
 <h2><a id="display" class="anchor" href="#display" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Score Structure Display</h2>
 <p>When clicking in the "Score" button you can see a time-scaled display of the events in the current file (this feature will not be available on mobile plattforms). These are arranged according to the following structure:
-<center><img src="images/score-legend.png" width="532" height="210"></center>
+<center><img src="images/score-legend.png" width="519" height="200"></center>
 The display is structured with the following functions:</p>
 <ul>
 <li>Score information - Open window to show event data (see below)</li>
@@ -577,6 +592,14 @@ The display is structured with the following functions:</p>
 <center><img src="images/score-control.png" width="268" height="209"></center>
 <p>When an event is clicked, the information is read in this window, and sets up the Go to Bar field.</p>
 
+<h3>Changing the shape of tempo changes in the score display</h3>
+<p>You can change the shape of the tempo change curve by following these steps:</p>
+ <ol>
+  <li>Find the tc command you wish to change and move the slider.<br>Moving it to the left will decrease the overall time, moving it to the right will increase it.<br><center><img src="images/tc-slider1.png" width="111" height="95">&emsp;&emsp;&emsp;&emsp;<img src="images/tc-slider.png" width="129" height="97"></center>
+</li>
+  <li>The score will be redrawn, you can listen to the new version and keep changing it.</li>
+  <li>When finished, export the file as txt. It will create a new file with the ending "-new" after the filename. Due to the internal processing, some details might be changed.</li>
+</ol> 
 
 <h2>
 <a id="midiexport" class="anchor" href="#midiexport" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI Export</h2>

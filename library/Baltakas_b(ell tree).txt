@@ -1,6 +1,6 @@
 # Vykintas Baltakas: b(ell tree) [2007]
 
-pickup 2
+# pickup 2
 
 # Bar 1
 t 69
@@ -80,7 +80,7 @@ t 69
 # Bar 58
 3/4
 3/4
-tc 69 3
+# tc 69 3
 2/4
 2/4
 3/4
